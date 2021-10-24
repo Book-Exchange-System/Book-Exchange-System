@@ -1,0 +1,145 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+html {
+    font-size:16px;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    height: 8rem;
+    background-color: blueviolet;
+}
+
+nav {
+    background-color: gray;
+    height: 4rem;
+}
+
+main {
+    height: 150rem;
+}
+
+aside {
+    float: left;
+    background-color: aquamarine;
+    width: 10%;
+    height: 150rem;
+}
+
+article {
+    float: left;
+    width: 90%;
+    height: 150rem;
+    background-color: burlywood;
+}
+section{
+    float:left;
+    margin: 2rem;
+    width: 19%;
+    height: 20rem;
+    background-color: aqua;
+}
+footer {
+    height: 20rem;
+}
+@media screen and (min-width:1700px) {
+    html{
+        font-size:19px;
+    }
+    main,article,aside{
+        height:100rem;
+    }
+    section{
+        width: 11.6%;
+        margin-left: 2rem;
+        height: 20rem;
+        background-color: aqua;
+    }
+}
+@media screen and (max-width:1250px) {
+    html{
+        font-size:11px;
+    }
+    main {
+        height: 275rem;
+    }
+    aside{
+        display: none;
+    }
+    article{
+        width: 100%;
+        height: 275rem;
+        padding-left: 2%;
+    }
+    section{
+        width: 27%;
+        margin-left: 2rem;
+        height: 30rem;
+        background-color: aqua;
+    }
+}
+@media screen and (max-width:800px) {
+    html{
+        font-size:9px;
+    }
+    main {
+        height: 410rem;
+    }
+    aside{
+        display: none;
+    }
+    article{
+        width: 100%;
+        height: 410rem;
+        padding-left: 1%;
+    }
+    section{
+        width: 42%;
+        margin-right: 2rem;
+        height: 30rem;
+        background-color: aqua;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    html{
+        font-size:7px;
+    }
+    header{
+        height: 15rem;
+    }
+    main {
+        height: 1060rem;
+    }
+    aside{
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    article{
+        width: 100%;
+        height: 1060rem;
+        padding-left:11% ;
+    }
+    section{
+        width: 70%;
+        margin-right: 10rem;
+        height: 40rem;
+        background-color: aqua;
+    }
+}
