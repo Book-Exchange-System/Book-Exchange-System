@@ -87,7 +87,7 @@
                 </div>
             </div>
         </div>
-        <!-- Sidebar Start-->
+        <!-- Sidebar End-->
         <!-- Navbar Start-->
         <div id="navbar">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -108,12 +108,24 @@
                         </a>
                     </div>
                 </div>
+                <!--Search bar-->
+                <div id="search-bar" class="search-bar">
+                    <form action="#" class="searchbox">
+                        <input type="text" class="text search-input" placeholder="Search Here...">
+                        <a class="search-link" href="#"><i class="ri-search-line"></i></a>
+                    </form>
+                </div>
+                <!--Navbar Collapse-->
+                <div id="navbar-collapse" style="width:300px;">
+
+                </div>
             </nav>
+            
         </div>
         <!-- Navbar End-->
         <!--Content Page Start-->
         <div id="content-page" class="content-page">
-            <div class="container">
+            <div class="container-fluid">
                 <main role="main" class="pb-3">
                     @RenderBody()
                 </main>

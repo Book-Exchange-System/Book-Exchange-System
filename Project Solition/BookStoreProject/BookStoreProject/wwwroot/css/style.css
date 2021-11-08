@@ -37,6 +37,27 @@ a {
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
 }
+
+#search-bar {
+    padding: 0 15px;
+}
+
+    #search-bar .searchbox {
+        width: 330px;
+        position: relative;
+    }
+
+    #search-bar .search-input {
+        width: 100%;
+        height: 40px;
+        padding: 5px 15px 5px 40px;
+        font-size: 13px;
+        border-radius: 5px;
+        border: none;
+        outline: medium none !important;
+        box-shadow: 0px 4px 20px 0px rgba(44, 101, 144, 0.1);
+    }
+
 /* NavBar */
 #navbar {
     margin-top: 11px;
@@ -52,6 +73,12 @@ a {
     display: inline-block;
     border-bottom: 1px solid #ededf0;
     transition: all 0.45s ease 0s;
+}
+#navbar .navbar-expand-lg {
+    justify-content: space-between !important;
+}
+#navbar .navbar-collapse {
+    flex-grow: unset;
 }
 
 /* Wrapper Menu */
@@ -86,7 +113,6 @@ a {
 .navbar-logo i {
     height: 45px;
 }
-
 /* Sidebar */
 #sidebar {
     width: 260px;
@@ -149,17 +175,19 @@ a {
     margin-top: 15px;
 }
 /* Content page */
-#content-page {
-    margin-top: 85px;
+.content-page {
+   margin-left:20px;
+   padding: 125px 15px 0px 15px;
 }
 
-    #content-page.clicked {
-        padding-left: 260px !important;
-    }
+#content-page.clicked {
+    margin-left: 300px;
+}
 
-    #content-page .container {
+    #content-page .container-fluid {
         min-height: 300px;
     }
+
 /* Footer */
 .footer-text {
     text-align: center;
