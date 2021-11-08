@@ -60,7 +60,6 @@ a {
 
 /* NavBar */
 #navbar {
-    margin-top: 11px;
     padding: 0px 15px;
     justify-content: space-between !important;
     position: relative;
@@ -112,6 +111,24 @@ a {
 
 .navbar-logo i {
     height: 45px;
+}
+/* Navbar Lists*/
+.nav-item{
+    margin:25px 10px;
+    float:left;
+    position: relative;
+}
+#user-profile{
+    padding-left:15px;
+}
+#profile-pic{
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+}
+.caption{
+    font-size:14px;
+    float:right;
 }
 /* Sidebar */
 #sidebar {
@@ -176,13 +193,8 @@ a {
 }
 /* Content page */
 .content-page {
-   margin-left:20px;
    padding: 125px 15px 0px 15px;
    text-align: center;
-}
-
-#content-page.clicked {
-    margin-left: 300px;
 }
 
     #content-page .container-fluid {
