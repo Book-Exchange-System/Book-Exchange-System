@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.8;
     padding: 0;
     margin: 0;
@@ -25,12 +25,13 @@ div {
 
 a {
     color: #0dd6b8;
-    text-decoration: none;
+    text-decoration: none!important;
     background-color: transparent;
 }
 
     a:hover {
         color: #0dd6b8;
+        text-decoration: none !important;
     }
 
 .justify-content-between {
@@ -73,12 +74,14 @@ a {
     border-bottom: 1px solid #ededf0;
     transition: all 0.45s ease 0s;
 }
-#navbar .navbar-expand-lg {
-    justify-content: space-between !important;
-}
-#navbar .navbar-collapse {
-    flex-grow: unset;
-}
+
+    #navbar .navbar-expand-lg {
+        justify-content: space-between !important;
+    }
+
+    #navbar .navbar-collapse {
+        flex-grow: unset;
+    }
 
 /* Wrapper Menu */
 .wrapper-menu {
@@ -100,12 +103,12 @@ a {
 .navbar-logo a {
     display: flex;
     align-items: flex-start;
+    font-size: 20px;
 }
 
     .navbar-logo a span {
         margin-left: 10px;
-        font-size: 19px;
-        line-height: 42px;
+        line-height: 45px;
         font-weight: 600;
     }
 
@@ -113,26 +116,29 @@ a {
     height: 45px;
 }
 /* Navbar Lists*/
-.nav-item{
-    margin:25px 10px;
-    float:left;
+.nav-item {
+    margin: 25px 10px;
+    float: left;
     position: relative;
 }
-#user-profile{
-    padding-left:15px;
+
+#user-profile {
+    padding-left: 15px;
 }
-#profile-pic{
+
+#profile-pic {
     width: 50px;
     height: 50px;
     margin-right: 16px;
 }
-.caption{
-    font-size:14px;
-    float:right;
+
+.caption {
+    font-size: 14px;
+    float: right;
 }
 /* Sidebar */
 #sidebar {
-    width: 260px;
+    width: 280px;
     height: 100%;
     left: 0;
     z-index: 999;
@@ -160,12 +166,13 @@ a {
     .sidebar-logo a {
         display: flex;
         align-items: flex-start;
+        font-size: 20px;
     }
 
         .sidebar-logo a span {
             margin-left: 10px;
-            font-size: 18px;
-            line-height: 42px;
+           
+            line-height: 45px;
             padding-left: 1px;
             letter-spacing: 1.5px;
             font-weight: 600;
@@ -193,16 +200,15 @@ a {
 }
 /* Content page */
 .content-page {
-   padding: 125px 15px 0px 15px;
-   text-align: center;
+    padding: 125px 15px 0px 15px;
+    text-align: center;
 }
 
-    #content-page .container-fluid {
-        min-height: 300px;
-    }
+#content-page .container-fluid {
+    min-height: 300px;
+}
 
 /* Footer */
 .footer-text {
     text-align: center;
 }
-/* Sign-up Page */
