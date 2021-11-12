@@ -4,12 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Book Store</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!--
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
           integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+
 </head>
 <body>
     <div class="wrapper">
@@ -116,11 +120,39 @@
                     </form>
                 </div>
                 <!--Navbar Collapse-->
-                <div id="navbar-collapse" style="width:300px;">
-
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ml-auto navbar-list">
+                        <li class="nav-item nav-icon">
+                            <a href="#">
+                                <i class="far fa-bell"></i>
+                                <span class="bg-primary dots"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-icon dropdown">
+                            <a href="#">
+                                <i class="far fa-envelope"></i>
+                                <span class="bg-primary dots"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-icon dropdown">
+                            <a href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="bg-primary dots"></span>
+                            </a>
+                        </li>
+                        <li class="line-height pt-3">
+                            <a id="user-profile" href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
+                                <img id="profile-pic" src="https://www.pinclipart.com/picdir/big/157-1578186_isolation-gown-clipart.png" alt="">
+                                <div class="caption">
+                                    <h6 class="mb-1 line-height text-dark">Osman MUTLU</h6>
+                                    <p class="mb-0 text-primary">$28.35</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
-            
+
         </div>
         <!-- Navbar End-->
         <!--Content Page Start-->
@@ -143,9 +175,11 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
             integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous"></script>-->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
