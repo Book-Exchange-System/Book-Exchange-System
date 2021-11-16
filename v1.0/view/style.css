@@ -205,7 +205,7 @@ a {
 }
 
 #content-page .container-fluid {
-    min-height: 300px;
+    height: auto;
 }
 
 /* Footer */

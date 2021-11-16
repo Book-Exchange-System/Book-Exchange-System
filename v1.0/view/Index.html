@@ -29,14 +29,21 @@
 
         .col-lg-12 {
             border: 1px solid black;
+            padding:10px 0px;
         }
 
         /* Slider */
+        .slider{
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
         .card-carousel {
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
+            left: 90px;
         }
 
         .card-carousel .slider-card {
@@ -44,12 +51,17 @@
             width: 12rem;
             position: relative;
             z-index: 1;
-            -webkit-transform: scale(0.6) translateY(-2rem);
-            transform: scale(0.6) translateY(-2rem);
+            -webkit-transform: scale(0.6) translateY(-1.2rem);
+            transform: scale(0.6) translateY(-1.2rem);
             opacity: 0;
             cursor: pointer;
             pointer-events: none;
             transition: 1s;
+        }
+
+        .card-carousel .slider-card .img-fluid {
+            min-height: 150px;
+            min-width: 100px;
         }
 
         .card-carousel .slider-card:after {
@@ -76,21 +88,59 @@
         .card-carousel .slider-card.prev,
         .card-carousel .slider-card.next {
             z-index: 2;
-            -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
-            transform: scale(0.8) translateY(-1rem) translateX(0);
-            opacity: 0.8;
+            -webkit-transform: scale(0.9) translateY(-1rem) translateX(0);
+            transform: scale(0.9) translateY(-1rem) translateX(0);
+            opacity: 1;
             pointer-events: auto;
             transition: 1s;
         }
-        .card-carousel .slider-card.tempprev,
-        .card-carousel .slider-card.tempnext {
-            z-index: 2;
-            -webkit-transform: scale(0.6) translateY(-2rem) translateX(0);
-            transform: scale(0.6) translateY(-2rem) translateX(0);
-            opacity: 0.6;
-            pointer-events: auto;
-            transition: 1s;
+        @media (min-width:800px){
+            .card-carousel .slider-card.tempprev,
+            .card-carousel .slider-card.tempnext {
+                z-index: 2;
+                -webkit-transform: scale(0.8) translateY(-1.2rem) translateX(0);
+                transform: scale(0.8) translateY(-1.2rem) translateX(0);
+                opacity: 1;
+                pointer-events: auto;
+                transition: 1s;
+            }
         }
+        
+        @media (min-width:1150px) {
+            .card-carousel .slider-card.tempprev-2,
+            .card-carousel .slider-card.tempnext-2 {
+                z-index: 2;
+                -webkit-transform: scale(0.7) translateY(-1.4rem) translateX(0);
+                transform: scale(0.7) translateY(-1.4rem) translateX(0);
+                opacity: 1;
+                pointer-events: auto;
+                transition: 1s;
+            }
+        }
+
+        .book-img-overlay{
+            position: absolute;
+            top:0;
+            left:0;
+            height:100%;
+            width:100%;
+            background-color:#0dd6b8;
+            opacity: 0;
+            border-radius: 10px;
+            transition: opacity 0.4s;
+        }
+        #book-img:hover .book-img-overlay{
+            opacity:0.8;
+        }
+        .book-img-overlay .icon{
+            color:#fff;
+            font-size:8rem;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+
     </style>
 </head>
 
@@ -99,29 +149,55 @@
         <!-- İndex Page Codes-->
         <div class="container-fluid" style="min-height: 300px;">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="new-releases slider">
-                        <div class="card-carousel">
-                            <div class="slider-card">
-                                <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
-                                                    " alt="">
-                            </div>
-                            <div class="slider-card">
-                                <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
-                                                    " alt="">
-                            </div>
-                            <div class="slider-card">
-                                <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
-                                                    " alt="">
-                            </div>
-                            <div class="slider-card">
-                                <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
-                                                    " alt="">
-                            </div>
-                            <div class="slider-card">
-                                <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
-                                                    " alt="">
-                            </div>
+                <div class="col-lg-12 slider">
+                    <div class="card-carousel">
+                        <div class="slider-card">
+                            <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                        </div>
+                        <div class="slider-card">
+                            <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                        </div>
+                        <div class="slider-card">
+                            <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                        </div>
+                        <div class="slider-card">
+                            <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                        </div>
+                        <div class="slider-card">
+                            <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                        </div>
+                        <div class="slider-card">
+                            <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                        </div>
+                        <div class="slider-card">
+                            <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                        </div>
+                        <div class="slider-card">
+                            <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                        </div>
+                        <div class="slider-card">
+                            <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                        </div>
+                        <div class="slider-card">
+                            <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                        </div>
+                        <div class="slider-card">
+                            <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                        </div>
+                        <div class="slider-card">
+                            <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
                         </div>
                     </div>
                 </div>
@@ -142,10 +218,15 @@
                                 <div class="card-book" style="height: calc(100% - 30px);">
                                     <div class="card-book-body p-0">
                                         <div class="d-flex align-items-center">
-                                            <div class="col-6 p-0 position-relative image-overlap-shadow">
+                                            <div id="book-img"class="col-6 p-0 position-relative image-overlap-shadow">
                                                 <a href="/Bookpage">
                                                     <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
                                                     " alt="">
+                                                    <div class="book-img-overlay">
+                                                        <div class="icon">
+                                                            <i class="fas fa-shopping-basket" style="font-size:4rem;"></i>
+                                                        </div>
+                                                    </div>
                                                 </a>
                                             </div>
                                             <div class="col-6">
@@ -176,10 +257,15 @@
                                 <div class="card-book" style="height: calc(100% - 30px);">
                                     <div class="card-book-body p-0">
                                         <div class="d-flex align-items-center">
-                                            <div class="col-6 p-0 position-relative image-overlap-shadow">
+                                            <div id="book-img"class="col-6 p-0 position-relative image-overlap-shadow">
                                                 <a href="/Bookpage">
                                                     <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
                                                     " alt="">
+                                                    <div class="book-img-overlay">
+                                                        <div class="icon">
+                                                            <i class="fas fa-shopping-basket" style="font-size:4rem;"></i>
+                                                        </div>
+                                                    </div>
                                                 </a>
                                             </div>
                                             <div class="col-6">
@@ -210,10 +296,15 @@
                                 <div class="card-book" style="height: calc(100% - 30px);">
                                     <div class="card-book-body p-0">
                                         <div class="d-flex align-items-center">
-                                            <div class="col-6 p-0 position-relative image-overlap-shadow">
+                                            <div id="book-img"class="col-6 p-0 position-relative image-overlap-shadow">
                                                 <a href="/Bookpage">
                                                     <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
                                                     " alt="">
+                                                    <div class="book-img-overlay">
+                                                        <div class="icon">
+                                                            <i class="fas fa-shopping-basket" style="font-size:4rem;"></i>
+                                                        </div>
+                                                    </div>
                                                 </a>
                                             </div>
                                             <div class="col-6">
@@ -244,10 +335,15 @@
                                 <div class="card-book" style="height: calc(100% - 30px);">
                                     <div class="card-book-body p-0">
                                         <div class="d-flex align-items-center">
-                                            <div class="col-6 p-0 position-relative image-overlap-shadow">
+                                            <div id="book-img"class="col-6 p-0 position-relative image-overlap-shadow">
                                                 <a href="/Bookpage">
                                                     <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
                                                     " alt="">
+                                                    <div class="book-img-overlay">
+                                                        <div class="icon">
+                                                            <i class="fas fa-shopping-basket" style="font-size:4rem;"></i>
+                                                        </div>
+                                                    </div>
                                                 </a>
                                             </div>
                                             <div class="col-6">
@@ -278,10 +374,15 @@
                                 <div class="card-book" style="height: calc(100% - 30px);">
                                     <div class="card-book-body p-0">
                                         <div class="d-flex align-items-center">
-                                            <div class="col-6 p-0 position-relative image-overlap-shadow">
+                                            <div id="book-img"class="col-6 p-0 position-relative image-overlap-shadow">
                                                 <a href="/Bookpage">
                                                     <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
                                                     " alt="">
+                                                    <div class="book-img-overlay">
+                                                        <div class="icon">
+                                                            <i class="fas fa-shopping-basket" style="font-size:4rem;"></i>
+                                                        </div>
+                                                    </div>
                                                 </a>
                                             </div>
                                             <div class="col-6">
@@ -312,10 +413,15 @@
                                 <div class="card-book" style="height: calc(100% - 30px);">
                                     <div class="card-book-body p-0">
                                         <div class="d-flex align-items-center">
-                                            <div class="col-6 p-0 position-relative image-overlap-shadow">
+                                            <div id="book-img"class="col-6 p-0 position-relative image-overlap-shadow">
                                                 <a href="/Bookpage">
                                                     <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
                                                     " alt="">
+                                                    <div class="book-img-overlay">
+                                                        <div class="icon">
+                                                            <i class="fas fa-shopping-basket" style="font-size:4rem;"></i>
+                                                        </div>
+                                                    </div>
                                                 </a>
                                             </div>
                                             <div class="col-6">
@@ -346,10 +452,15 @@
                                 <div class="card-book" style="height: calc(100% - 30px);">
                                     <div class="card-book-body p-0">
                                         <div class="d-flex align-items-center">
-                                            <div class="col-6 p-0 position-relative image-overlap-shadow">
+                                            <div id="book-img"class="col-6 p-0 position-relative image-overlap-shadow">
                                                 <a href="/Bookpage">
                                                     <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
                                                     " alt="">
+                                                    <div class="book-img-overlay">
+                                                        <div class="icon">
+                                                            <i class="fas fa-shopping-basket" style="font-size:4rem;"></i>
+                                                        </div>
+                                                    </div>
                                                 </a>
                                             </div>
                                             <div class="col-6">
@@ -376,109 +487,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                                <div class="card-book" style="height: calc(100% - 30px);">
-                                    <div class="card-book-body p-0">
-                                        <div class="d-flex align-items-center">
-                                            <div class="col-6 p-0 position-relative image-overlap-shadow">
-                                                <a href="/Bookpage">
-                                                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
-                                                    " alt="">
-                                                </a>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="mb-2">
-                                                    <h6 class="mb-2"> Reading on the World</h6>
-                                                    <p class="font-size-13 line-height mb-1">Jhone Steben</p>
-                                                </div>
-                                                <div class="price d-flex align-items-center">
-                                                    <span class="pr-1 old-price">$100</span>
-                                                    <h6>
-                                                        <b>$89</b>
-                                                    </h6>
-                                                </div>
-                                                <div class="product-action">
-                                                    <a href="">
-                                                        <i class="fas fa-shopping-cart"></i>
-                                                    </a>
-                                                    <a href="" class="ml-2">
-                                                        <i class="fas fa-heart"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                                <div class="card-book" style="height: calc(100% - 30px);">
-                                    <div class="card-book-body p-0">
-                                        <div class="d-flex align-items-center">
-                                            <div class="col-6 p-0 position-relative image-overlap-shadow">
-                                                <a href="/Bookpage">
-                                                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
-                                                    " alt="">
-                                                </a>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="mb-2">
-                                                    <h6 class="mb-2"> Reading on the World</h6>
-                                                    <p class="font-size-13 line-height mb-1">Jhone Steben</p>
-                                                </div>
-                                                <div class="price d-flex align-items-center">
-                                                    <span class="pr-1 old-price">$100</span>
-                                                    <h6>
-                                                        <b>$89</b>
-                                                    </h6>
-                                                </div>
-                                                <div class="product-action">
-                                                    <a href="">
-                                                        <i class="fas fa-shopping-cart"></i>
-                                                    </a>
-                                                    <a href="" class="ml-2">
-                                                        <i class="fas fa-heart"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                                <div class="card-book" style="height: calc(100% - 30px);">
-                                    <div class="card-book-body p-0">
-                                        <div class="d-flex align-items-center">
-                                            <div class="col-6 p-0 position-relative image-overlap-shadow">
-                                                <a href="/Bookpage">
-                                                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
-                                                    " alt="">
-                                                </a>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="mb-2">
-                                                    <h6 class="mb-2"> Reading on the World</h6>
-                                                    <p class="font-size-13 line-height mb-1">Jhone Steben</p>
-                                                </div>
-                                                <div class="price d-flex align-items-center">
-                                                    <span class="pr-1 old-price">$100</span>
-                                                    <h6>
-                                                        <b>$89</b>
-                                                    </h6>
-                                                </div>
-                                                <div class="product-action">
-                                                    <a href="">
-                                                        <i class="fas fa-shopping-cart"></i>
-                                                    </a>
-                                                    <a href="" class="ml-2">
-                                                        <i class="fas fa-heart"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
