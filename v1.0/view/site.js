@@ -121,3 +121,8 @@ $('.slider-card').click(function () {
     $(this).next().next().addClass('tempnext');
     $(this).next().next().next().addClass('tempnext-2');
 });
+$('.sidebar-item').click(function (){
+    $(this).removeClass('active');
+    $(this).siblings().removeClass('active');
+    $(this).addClass('active');
+});

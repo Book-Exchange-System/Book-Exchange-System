@@ -191,12 +191,29 @@ a {
     position: relative;
 }
 
-#sidebar-scrollbar {
+#sidebar-content {
     height: 100vh;
 }
 
-#sidebar #sidebar-scrollbar {
+#sidebar #sidebar-content {
     margin-top: 15px;
+}
+#sidebar-content li{
+    margin:10px 0px;
+}
+#sidebar-content li i{
+    margin:0 10px;
+}
+#sidebar-content li a{
+    font-size:1.2rem;
+    color: rgb(119, 125, 116);
+}
+#sidebar-content li:hover a{
+    color:#0dd6b8;
+    transition: color 0.4s;
+}
+#sidebar-content .active a{
+    color:#0dd6b8;
 }
 /* Content page */
 .content-page {

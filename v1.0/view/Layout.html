@@ -37,60 +37,17 @@
         </div>
       </div>
       <!--Sidebar Nav-->
-      <div id="sidebar-scrollbar" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: none;">
-        <div class="scroll-content" style="transform: translate3d(0px, 0px, 0px);">
-          <nav class="iq-sidebar-menu">
-            <ul id="iq-sidebar-toggle" class="iq-menu">
-              <li class="active active-menu">
-                <a href="#" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true">
-                  <span class="ripple rippleEffect"></span><i class="fas fa-shopping-cart"></i><span>Shop</span><i
-                    class="ri-arrow-right-s-line iq-arrow-right"></i>
-                </a>
-                <ul id="dashboard" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
-                  <li class="active"><a href="#"><i class="fas fa-home"></i>Home Page</a></li>
-                  <li><a href="#"><i class="fas fa-th-large"></i>Category Page</a></li>
-                  <li><a href="#"><i class="fas fa-book"></i>Book Page</a></li>
-                  <li><a href="#"><i class="fas fa-file-pdf"></i>Book PDF</a></li>
-                  <li><a href="#"><i class="fas fa-shopping-basket"></i>Checkout</a></li>
-                  <li><a href="#"><i class="fas fa-heart"></i>wishlist</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false">
-                  <span class="ripple rippleEffect"></span><i class="ri-admin-line"></i><span>Admin</span><i
-                    class="ri-arrow-right-s-line iq-arrow-right"></i>
-                </a>
-                <ul id="admin" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                  <li><a href="#"><i class="ri-dashboard-line"></i>Dashboard</a></li>
-                  <li><a href="#"><i class="ri-list-check-2"></i>Category Lists</a></li>
-                  <li><a href="#"><i class="ri-file-user-line"></i>Author</a></li>
-                  <li><a href="#"><i class="ri-book-2-line"></i>Books</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false">
-                  <span class="ripple rippleEffect"></span><i
-                    class="las la-user-tie iq-arrow-left"></i><span>User</span><i
-                    class="ri-arrow-right-s-line iq-arrow-right"></i>
-                </a>
-                <ul id="userinfo" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                  <li><a href="#"><i class="fas fa-id-card-alt"></i>User Profile</a></li>
-                  <li><a href="#"><i class="fas fa-edit"></i>User Edit</a></li>
-                  <li><a href="#"><i class="fas fa-plus-circle"></i>User Add</a></li>
-                  <li><a href="#"><i class="fas fa-th-list"></i>User List</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="scrollbar-track scrollbar-track-x" style="display: none;">
-          <div class="scrollbar-thumb scrollbar-thumb-x" style="width: 260px; transform: translate3d(0px, 0px, 0px);">
-          </div>
-        </div>
-        <div class="scrollbar-track scrollbar-track-y" style="display: block;">
-          <div class="scrollbar-thumb scrollbar-thumb-y"
-            style="height: 764.883px; transform: translate3d(0px, 0px, 0px);"></div>
-        </div>
+      <div id="sidebar-content" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: none;">
+        <nav class="sidebar-menu">
+          <ul id="sidebar-toggle" class="iq-menu">
+            <li class="sidebar-item active"><a href="#"><i class="fas fa-home"></i>Home Page</a></li>
+            <li class="sidebar-item"><a href="#"><i class="fas fa-th-large"></i>Category Page</a></li>
+            <li class="sidebar-item"><a href="#"><i class="fas fa-book"></i>Book Page</a></li>
+            <li class="sidebar-item"><a href="#"><i class="fas fa-file-pdf"></i>Book PDF</a></li>
+            <li class="sidebar-item"><a href="#"><i class="fas fa-shopping-basket"></i>Checkout</a></li>
+            <li class="sidebar-item"><a href="#"><i class="fas fa-heart"></i>Wishlist</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
     <!-- Sidebar End-->
@@ -144,7 +101,8 @@
             </li>
             <li class="line-height pt-3">
               <a id="user-profile" href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
-                <img id="profile-pic"src="https://www.pinclipart.com/picdir/big/157-1578186_isolation-gown-clipart.png" alt="">
+                <img id="profile-pic" src="https://www.pinclipart.com/picdir/big/157-1578186_isolation-gown-clipart.png"
+                  alt="">
                 <div class="caption">
                   <h6 class="mb-1 line-height text-dark">Osman MUTLU</h6>
                   <p class="mb-0 text-primary">$28.35</p>
@@ -158,9 +116,9 @@
     </div>
     <!-- Navbar End-->
     <!--Content Page Start-->
-    <div id="content-page" class="content-page"> 
+    <div id="content-page" class="content-page">
       <div class="container-fluid">
-        <main role="main" class="pb-3" >
+        <main role="main" class="pb-3">
           <iframe id="iframe" src="index.html" style="width:100%;"></iframe>
         </main>
       </div>
@@ -187,7 +145,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="site.js"></script>
   <script>
-    
+
   </script>
 </body>
 
