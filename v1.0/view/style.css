@@ -229,3 +229,123 @@ a {
 .footer-text {
     text-align: center;
 }
+/* Index Page */
+
+.col-6 {
+    padding: 0 15px;
+}
+
+.col-lg-6 {
+}
+
+.col-lg-12 {
+    padding:10px 0px;
+}
+/* Slider */
+.slider{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.card-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 90px;
+}
+
+.card-carousel .slider-card {
+    height: auto;
+    width: 12rem;
+    position: relative;
+    z-index: 1;
+    -webkit-transform: scale(0.6) translateY(-1.2rem);
+    transform: scale(0.6) translateY(-1.2rem);
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.card-carousel .slider-card .img-fluid {
+    min-height: 150px;
+    min-width: 100px;
+}
+
+.card-carousel .slider-card:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: -5rem;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.card-carousel .slider-card.active {
+    z-index: 3;
+    -webkit-transform: scale(1) translateY(0) translateX(0);
+    transform: scale(1) translateY(0) translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1s;
+}
+
+.card-carousel .slider-card.prev,
+.card-carousel .slider-card.next {
+    z-index: 2;
+    -webkit-transform: scale(0.9) translateY(-1rem) translateX(0);
+    transform: scale(0.9) translateY(-1rem) translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1s;
+}
+@media (min-width:800px){
+    .card-carousel .slider-card.tempprev,
+    .card-carousel .slider-card.tempnext {
+        z-index: 2;
+        -webkit-transform: scale(0.8) translateY(-1.2rem) translateX(0);
+        transform: scale(0.8) translateY(-1.2rem) translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+        transition: 1s;
+    }
+}
+
+@media (min-width:1150px) {
+    .card-carousel .slider-card.tempprev-2,
+    .card-carousel .slider-card.tempnext-2 {
+        z-index: 2;
+        -webkit-transform: scale(0.7) translateY(-1.4rem) translateX(0);
+        transform: scale(0.7) translateY(-1.4rem) translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+        transition: 1s;
+    }
+}
+
+.book-img-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color:#0dd6b8;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.4s;
+}
+#book-img:hover .book-img-overlay{
+    opacity:0.8;
+}
+.book-img-overlay .icon{
+    color:#fff;
+    font-size:8rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
