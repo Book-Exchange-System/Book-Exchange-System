@@ -1,11 +1,178 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Home Page";
 }
+<div id="index">
+    <div class="row">
+        <div class="col-lg-12 slider">
+            <div class="card-carousel">
+                <div class="slider-card">
+                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                </div>
+                <div class="slider-card">
+                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                </div>
+                <div class="slider-card">
+                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                </div>
+                <div class="slider-card">
+                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                </div>
+                <div class="slider-card">
+                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                </div>
+                <div class="slider-card">
+                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                </div>
+                <div class="slider-card">
+                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                </div>
+                <div class="slider-card">
+                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                </div>
+                <div class="slider-card">
+                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                </div>
+                <div class="slider-card">
+                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                </div>
+                <div class="slider-card">
+                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                </div>
+                <div class="slider-card">
+                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                " alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                    <div class="header-title">
+                        <h4 class="card-title mb-0">
+                            Browse Books
+                        </h4>
+                    </div>
+                    <div class="category-header-btn d-flex align-items-center">
+                        <a href="/Category" class="btn btn-sm btn-primary view-more">View More</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        @for (int i = 0; i < 10; i++)
+                        {
+                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                                <div class="card-book" style="height: calc(100% - 30px);">
+                                    <div class="card-book-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div id="book-img" class="col-6 p-0 position-relative image-overlap-shadow">
+                                                <a href="/Bookpage">
+                                                    <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg
+                                                    " alt="">
+                                                    <div class="book-img-overlay">
+                                                        <div class="icon">
+                                                            <i class="fas fa-shopping-basket" style="font-size:4rem;"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="mb-2">
+                                                    <h6 class="mb-2"> Reading on the World</h6>
+                                                    <p class="font-size-13 line-height mb-1">Jhone Steben</p>
+                                                </div>
+                                                <div class="price d-flex align-items-center">
+                                                    <span class="pr-1 old-price">$100</span>
+                                                    <h6>
+                                                        <b>$89</b>
+                                                    </h6>
+                                                </div>
+                                                <div class="product-action">
+                                                    <a href="">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                    <a href="" class="ml-2">
+                                                        <i class="fas fa-heart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-lg-6 featured-books">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                    <div class="header-title">
+                        <h4 class="featured-book-title mb-0">
+                            Featured Books
+                        </h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5 pr-0">
+                            <a href="#">
+                                <img class="img-fluid rounded w-100" src="https://templates.iqonic.design/booksto/html/images/browse-books/01.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-7 mt-3 mt-sm-0">
+                            <h4 class="mb-2">Casey Christie night book into find...</h4>
+                            <p class="mb-2">Author: Gheg origin</p>
+                            <span class="text-dark mb-3 d-block">Lorem Ipsum is simply dummy test in find a of the printing and typeset ing industry into end.</span>
+                            <button type="submit" class="btn btn-primary learn-more">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="featured-book-img">
 
-<div class="text-center">
-    <ul>
-    </ul>
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+                    </div>
+                    <div class="featured-book-content"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                    <div class="header-title">
+                        <h4 class="featured-book-title mb-0">
+                            Featured Books
+                        </h4>
+                    </div>
+                </div>
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                    <div class="header-title">
+                        <h4 class="featured-book-title mb-0">
+                            Featured Books
+                        </h4>
+                    </div>
+                </div>
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

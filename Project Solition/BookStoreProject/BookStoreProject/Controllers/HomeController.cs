@@ -6,9 +6,13 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace BookStoreProject.Controllers
 {
+    [Obsolete]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -23,6 +27,10 @@ namespace BookStoreProject.Controllers
             return View();
         }
 
+        public ActionResult Category()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {
