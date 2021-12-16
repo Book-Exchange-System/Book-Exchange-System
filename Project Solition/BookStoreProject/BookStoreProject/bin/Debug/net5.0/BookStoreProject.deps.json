@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "BookStoreProject/1.0.0": {
         "dependencies": {
+          "Microsoft.SqlServer.Types": "14.0.1016.290",
           "System.Configuration.ConfigurationManager": "6.0.0",
           "System.Data.SqlClient": "4.8.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -321,6 +322,17 @@
         },
         "compile": {
           "BookStoreProject.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.Types/14.0.1016.290": {
+        "runtime": {
+          "lib/net40/Microsoft.SqlServer.Types.dll": {
+            "assemblyVersion": "14.0.0.0",
+            "fileVersion": "2017.140.1016.290"
+          }
+        },
+        "compile": {
+          "lib/net40/Microsoft.SqlServer.Types.dll": {}
         }
       },
       "Microsoft.Win32.Registry/4.7.0": {
@@ -2225,6 +2237,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.SqlServer.Types/14.0.1016.290": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-isHCxuC16Tsgp7YfuagLRHEoFfJs0ibc0xBlSuU0yqUB9BeKRVxTU4CbsWfzsaW67I7LG5XLW4UCZFbVktmEuA==",
+      "path": "microsoft.sqlserver.types/14.0.1016.290",
+      "hashPath": "microsoft.sqlserver.types.14.0.1016.290.nupkg.sha512"
     },
     "Microsoft.Win32.Registry/4.7.0": {
       "type": "package",

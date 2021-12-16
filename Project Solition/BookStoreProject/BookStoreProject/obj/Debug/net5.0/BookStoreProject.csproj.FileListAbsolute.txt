@@ -59,3 +59,7 @@ C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\r
 C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
 C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\BookPage.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\checkout.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\Microsoft.SqlServer.Types.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\table_view.cshtml.g.cs

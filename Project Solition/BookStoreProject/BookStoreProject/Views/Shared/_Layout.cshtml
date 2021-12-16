@@ -12,15 +12,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
           integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="~/slick/slick.css" rel="stylesheet" />
+    <link href="~/slick/slick-theme.css" rel="stylesheet" />
     <link href="~/css/site.css" rel="stylesheet" />
 </head>
 <body class="vsc-initialized">
-    <div class="wrapper">
+    <div class="wrapper">   
         <!--Sidebar Start -->
         <div id="sidebar">
             <div class="sidebar-logo d-flex justify-content-between">
                 <!--Sidebar Logo and Title -->
-                <a href="#" class="header-logo">
+                <a asp-action="index" class="header-logo">
                     <i class="fas fa-book-reader fa-2x"></i>
                     <div class="logo-title">
                         <span class="text-primary text-uppercase">Book Store</span>
@@ -41,11 +43,11 @@
             <div id="sidebar-content" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: none;">
                 <nav class="sidebar-menu">
                     <ul id="sidebar-toggle" class="iq-menu">
-                        <li class="sidebar-item active"><a href="~/home/index"><i class="fas fa-home"></i>Home Page</a></li>
-                        <li class="sidebar-item"><a href="~/home/category"><i class="fas fa-th-large"></i>Category Page</a></li>
-                        <li class="sidebar-item"><a href="#"><i class="fas fa-book"></i>Book Page</a></li>
+                        <li class="sidebar-item active"><a asp-action="index"><i class="fas fa-home"></i>Home Page</a></li>
+                        <li class="sidebar-item"><a asp-action="category"><i class="fas fa-th-large"></i>Category Page</a></li>
+                        <li class="sidebar-item"><a href="~/book/14"><i class="fas fa-book"></i>Book Page</a></li>
                         <li class="sidebar-item"><a href="#"><i class="fas fa-file-pdf"></i>Book PDF</a></li>
-                        <li class="sidebar-item"><a href="#"><i class="fas fa-shopping-basket"></i>Checkout</a></li>
+                        <li class="sidebar-item"><a asp-action="checkout"><i class="fas fa-shopping-basket"></i>Checkout</a></li>
                         <li class="sidebar-item"><a href="#"><i class="fas fa-heart"></i>Wishlist</a></li>
                     </ul>
                 </nav>
@@ -64,7 +66,7 @@
                     </div>
                     <!--Navbar Title and Logo -->
                     <div class="navbar-logo d-flex justify-content-between">
-                        <a href="#" class="header-logo">
+                        <a asp-action="index" class="header-logo">
                             <i class="fas fa-book-reader fa-2x"></i>
                             <div class="logo-title">
                                 <span class="text-primary text-uppercase">Book Store</span>
@@ -102,8 +104,7 @@
                         </li>
                         <li class="line-height pt-3">
                             <a id="user-profile" href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
-                                <img id="profile-pic" src="https://www.pinclipart.com/picdir/big/157-1578186_isolation-gown-clipart.png"
-                                     alt="">
+                                <img  id="profile-pic"src="~/images/person-icon.png">
                                 <div class="caption">
                                     <h6 class="mb-1 line-height text-dark">Osman MUTLU</h6>
                                     <p class="mb-0 text-primary">$28.35</p>
@@ -140,6 +141,7 @@
             integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
             crossorigin="anonymous"></script>-->
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/slick/slick.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

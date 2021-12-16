@@ -15,7 +15,7 @@ div {
 }
 
 .text-primary {
-    color: #0dd6b8 !important;
+    color: #76c3d7 !important;
 }
 
 .text-uppercase {
@@ -23,24 +23,24 @@ div {
 }
 
 .btn-primary {
-    background-color: #0dd6b8;
+    background-color: #76c3d7;
     border: none;
 }
 
     .btn-primary:hover {
         background-color: inherit;
-        color: #0dd6b8;
+        color: #76c3d7;
         border: none;
     }
 
 a {
-    color: #0dd6b8;
+    color: initial;
     text-decoration: none !important;
     background-color: transparent;
 }
 
     a:hover {
-        color: #0dd6b8;
+        color: initial;
         text-decoration: none !important;
     }
 
@@ -93,12 +93,21 @@ a {
         flex-grow: unset;
     }
 
+    #navbar .navbar-nav .nav-item i {
+        font-size: 1.1rem;
+        color: rgb(119, 125, 116) !important;
+    }
+
+    #navbar .navbar-nav .nav-item:hover i {
+        color: #76c3d7 !important;
+    }
+
 /* Wrapper Menu */
 .wrapper-menu {
     font-size: 30px;
     text-align: center;
     line-height: 15px;
-    color: #0dd6b8 !important;
+    color: #76c3d7 !important;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -123,6 +132,7 @@ a {
     }
 
 .navbar-logo i {
+    color: #76c3d7;
     height: 45px;
 }
 /* Navbar Lists*/
@@ -174,6 +184,7 @@ a {
 }
 
     .sidebar-logo a {
+        color: #76c3d7;
         display: flex;
         align-items: flex-start;
         font-size: 20px;
@@ -189,6 +200,7 @@ a {
         }
 
 .sidebar .sidebar-logo {
+    
     float: none;
     width: 100%;
     padding-top: 0;
@@ -222,7 +234,7 @@ a {
     }
 
     #sidebar-content li:hover a {
-        color: #0dd6b8;
+        color: #76c3d7;
         transition: color 0.8s;
     }
 
@@ -239,6 +251,12 @@ a {
 .footer-text {
     text-align: center;
 }
+    .footer-text a {
+        color: #76c3d7;
+    }
+    .footer-text a:hover {
+        color: initial;
+    }
 /* Index Page */
 
 .col-6 {
@@ -247,6 +265,13 @@ a {
 
 .col-lg-12 {
     padding: 10px 15px;
+}
+
+.product-action i {
+    color: #76c3d7;
+}
+.card{
+    margin-bottom:30px;
 }
 /* Slider */
 .slider {
@@ -275,8 +300,12 @@ a {
         pointer-events: none;
         transition: 1s;
     }
+        .card-carousel .slider-card.active:hover .book-img-overlay {
+            opacity: 0.8;
+        }
 
         .card-carousel .slider-card .img-fluid {
+            height: 19rem;
             min-height: 150px;
             min-width: 100px;
         }
@@ -338,14 +367,17 @@ a {
 
 .card {
     border-radius: 5px;
-    border: none!important;
+    border: none !important;
     outline: medium none !important;
     box-shadow: 0px 4px 20px 0px rgba(44, 101, 144, 0.1);
 }
-.card-header{
-    background-color:inherit;
-}
 
+.card-header {
+    background-color: inherit;
+}
+h4.card-title{
+    font-weight:700!important;
+}
 .book-img-overlay {
     position: absolute;
     top: 0;
@@ -354,7 +386,6 @@ a {
     width: 100%;
     background-color: black;
     opacity: 0;
-
     border-radius: 5px;
     transition: opacity 0.4s;
 }
@@ -363,11 +394,58 @@ a {
     opacity: 0.8;
 }
 
-.book-img-overlay .icon {
-    color: #0dd6b8;
-    font-size: 4rem;
+.book-img-overlay i {
+    font-size: 3rem;
+    color: #76c3d7;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.book-img-overlay .btn {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.read-now-btn {
+    text-decoration: underline !important;
+}
+/* Category Page */
+.list-inline li {
+    margin-left: 10px;
+}
+/* checkout page */
+li.checkout-product {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--iq-border-light);
+    padding-bottom: 25px;
+}
+
+    li.checkout-product:last-child {
+        margin-bottom: 5px;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+#quantity {
+    display: inline-block;
+    width: 30px;
+    height: 28px;
+    border: 1px solid #ededf0;
+    text-align: center;
+}
+
+.qty-btn {
+    border: 1px solid #ededf0;
+    background: var(--iq-white);
+    height: 28px;
+    width: 30px;
+    vertical-align: top;
+}
+
+.form-add-btn {
+    margin-bottom: 20px;
 }
