@@ -1,0 +1,42 @@
+﻿
+@{ ViewData["Title"] = "Display Data";
+                string[] table_headers = new string[]
+                {
+        "ID","Username","Password","Name","Surname","Birtday","Phone Number","Email","Gender"
+                    }; }
+
+<div class="table">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                @foreach (var head in table_headers)
+                {
+    <th>@head</th>}
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                foreach (var data in Model)
+                {
+            <tr>
+
+                <td>@data.ID</td>
+                <td>@data.Username</td>
+                <td>@data.Password</td>
+                <td>@data.Name</td>
+                <td>@data.Surname</td>
+                <td>@{
+                    DateTime date = data.Birthday;
+                    String birthday = date.ToString("yyyy-MM-dd");
+                }@birthday
+                </td>
+                <td>@data.PhoneNumber</td>
+                <td>@data.Email</td>
+                <td>@data.Gender</td>
+            </tr>                }
+            }
+        </tbody>
+
+    </table>
+</div>
