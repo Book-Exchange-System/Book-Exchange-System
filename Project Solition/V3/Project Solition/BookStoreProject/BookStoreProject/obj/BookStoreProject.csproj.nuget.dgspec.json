@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ecems\\Desktop\\Book-Exchange-System-main\\Project Solition\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj": {}
+    "C:\\Users\\ecems\\Documents\\GitHub\\Book-Exchange-System\\Project Solition\\V3\\Project Solition\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ecems\\Desktop\\Book-Exchange-System-main\\Project Solition\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj": {
+    "C:\\Users\\ecems\\Documents\\GitHub\\Book-Exchange-System\\Project Solition\\V3\\Project Solition\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ecems\\Desktop\\Book-Exchange-System-main\\Project Solition\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj",
+        "projectUniqueName": "C:\\Users\\ecems\\Documents\\GitHub\\Book-Exchange-System\\Project Solition\\V3\\Project Solition\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj",
         "projectName": "BookStoreProject",
-        "projectPath": "C:\\Users\\ecems\\Desktop\\Book-Exchange-System-main\\Project Solition\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj",
+        "projectPath": "C:\\Users\\ecems\\Documents\\GitHub\\Book-Exchange-System\\Project Solition\\V3\\Project Solition\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj",
         "packagesPath": "C:\\Users\\ecems\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ecems\\Desktop\\Book-Exchange-System-main\\Project Solition\\BookStoreProject\\BookStoreProject\\obj\\",
+        "outputPath": "C:\\Users\\ecems\\Documents\\GitHub\\Book-Exchange-System\\Project Solition\\V3\\Project Solition\\BookStoreProject\\BookStoreProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ecems\\AppData\\Roaming\\NuGet\\NuGet.Config",

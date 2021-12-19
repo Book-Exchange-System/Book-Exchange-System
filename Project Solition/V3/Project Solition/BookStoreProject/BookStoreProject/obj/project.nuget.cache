@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ETVuKhQl9i1ciC+DyGifLAsXvfM3uwCD02DUDNc/jVPop/g0IGoP9cYNI1Pk6RbV/+hJYPQNQ/oDU1kHFnidUA==",
+  "dgSpecHash": "cPTxNKM/MA/d3OZkofU0bEbwPpL6bYVcvRnhlJkAz5G8HiD4ncvvUNnGFlmJziP8abiRZXeQo46EB97cXFotSw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ecems\\Desktop\\Book-Exchange-System-main\\Project Solition\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj",
+  "projectFilePath": "C:\\Users\\ecems\\Documents\\GitHub\\Book-Exchange-System\\Project Solition\\V3\\Project Solition\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ecems\\.nuget\\packages\\microsoft.sqlserver.types\\14.0.1016.290\\microsoft.sqlserver.types.14.0.1016.290.nupkg.sha512",
     "C:\\Users\\ecems\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
