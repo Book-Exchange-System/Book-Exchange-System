@@ -66,17 +66,17 @@ namespace BookStoreProject.Controllers
         }
         public User CheckUser(User user)
         {
-            String commandText = "Select * from [bookexchange].[dbo].[User]";
+            String commandText = "Select * from [bookexchange].[dbo].[User] where Username= '"+ user.Username+"'";
             FetchUser(commandText);
             foreach (User temp in users)
             {
-                if (temp.Username.Equals(user.Username) && temp.Password.Equals(user.Password)) return temp;
+                if (temp.Password.Equals(user.Password)) return temp;
             }
             return null;
         }
         public bool HasUser(User user)
         {
-            String commandText = "Select * from [bookexchange].[dbo].[User]";
+            String commandText = "Select * from [bookexchange].[dbo].[User] where Username= '" + user.Username + "'";
             FetchUser(commandText);
             foreach(User temp in users)
             {

@@ -16,9 +16,7 @@ namespace BookStoreProject.Controllers
     {
         SqlCommand com = new SqlCommand();
         SqlDataReader dr;
-        
         SqlConnection con = new SqlConnection(@"Data Source=OsmanPC;Initial Catalog=bookexchange;Integrated Security=True");
-       
         public List<String> FetchCategories(string commandText)
         {
             try
@@ -43,10 +41,6 @@ namespace BookStoreProject.Controllers
         public List<Book> FetchBook(string commandText)
         {
             List<Book> books = new List<Book>();
-            if (books.Count > 0)
-            {
-                books.Clear();
-            }
             try
             {
                 con.Open();

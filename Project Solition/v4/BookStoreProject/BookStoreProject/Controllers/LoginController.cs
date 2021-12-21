@@ -20,7 +20,6 @@ namespace BookStoreProject.Controllers
         [HttpPost]
         public IActionResult Login(User user)
         {
-            String errorMessage = "";
             User temp = userController.CheckUser(user);
             if (temp!=null)
             {

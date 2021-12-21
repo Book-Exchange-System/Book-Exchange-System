@@ -1,5 +1,5 @@
 ﻿body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -9,7 +9,10 @@
     background-color: rgba(0,0,0,.03);
     text-align: left;
 }
-
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    font-family: Montserrat;
+}
 div {
     display: block;
 }
@@ -21,7 +24,9 @@ div {
 .text-uppercase {
     text-transform: uppercase !important;
 }
-
+.bg-primary {
+    background-color: #76c3d7 !important;
+}
 .btn-primary {
     background-color: #76c3d7;
     border: none;
@@ -71,6 +76,9 @@ a {
 
 /* NavBar */
 #navbar {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 1.4rem;
     padding: 0px 15px;
     justify-content: space-between !important;
     position: relative;
@@ -122,13 +130,13 @@ a {
 .navbar-logo a {
     display: flex;
     align-items: flex-start;
-    font-size: 20px;
+    font-size: 1.4rem;
 }
 
     .navbar-logo a span {
         margin-left: 10px;
         line-height: 45px;
-        font-weight: 600;
+        font-weight: 700;
     }
 
 .navbar-logo i {
@@ -158,6 +166,9 @@ a {
 }
 /* Sidebar */
 #sidebar {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 1.4rem;
     width: 280px;
     height: 100%;
     left: 0;
@@ -449,9 +460,16 @@ li.checkout-product {
 .form-add-btn {
     margin-bottom: 20px;
 }
-#searchmenu{
-    display:none;
+/* Login page */
+.sign-in-from {
+    padding: 30px;
+    position: relative;
+    margin: 50px;
+    width: 50%;
+    margin: 0 auto;
 }
-    #searchmenu.active {
-        display: block;
-    }
+
+.height-self-center {
+    height: 100vh;
+    border-radius: 5px;
+}
