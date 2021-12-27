@@ -1,0 +1,298 @@
+﻿
+@{
+    ViewData["Title"] = "Category Page";
+}
+
+<div id="category-page">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card-transparent mb-0">
+                <div class="d-block text-center">
+                    <h2 class="mb-3">Search by Book Name</h2>
+                    <div class="w-100 search-filter">
+                        <ul class="list-inline p-0 m-0 row justify-content-center search-menu-options">
+                            <li class="search-menu-opt">
+                                <div class="dropdown">
+                                    <div class="form-group mb-0">
+                                        <select class="form-control form-search-control bg-white border-0" id="exampleFormControlSelect1">
+                                            <option selected="">All</option>
+                                            <option>A Books</option>
+                                            <option>the Sun</option>
+                                            <option>Harsh book</option>
+                                            <option>People book</option>
+                                            <option>the Fog</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="search-menu-opt">
+                                <div class="dropdown">
+                                    <div class="form-group mb-0">
+                                        <select class="form-control form-search-control bg-white border-0" id="exampleFormControlSelect2">
+                                            <option selected="">Category</option>
+                                            <option>SciFi</option>
+                                            <option>deneme2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="search-menu-opt">
+                                <div class="dropdown">
+                                    <div class="form-group mb-0">
+                                        <select class="form-control form-search-control bg-white border-0" id="exampleFormControlSelect3">
+                                            <option selected="">Year</option>
+                                            <option>2015</option>
+                                            <option>2016</option>
+                                            <option>2017</option>
+                                            <option>2018</option>
+                                            <option>2019</option>
+                                            <option>2020</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="search-menu-opt">
+                                <div class="dropdown">
+                                    <div class="form-group mb-0">
+                                        <select class="form-control form-search-control bg-white border-0" id="exampleFormControlSelect4">
+                                            <option selected="">Author</option>
+                                            <option>Milesiy Yor</option>
+                                            <option>Ira Membrit</option>
+                                            <option>Anna Mull</option>
+                                            <option>John Smith</option>
+                                            <option>David King</option>
+                                            <option>Kusti Franti</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="search-menu-opt">
+                                <div id="search-bar" class="search-bar search-book d-flex align-items-center">
+                                    <form action="#" class="searchbox">
+                                        <input type="text" class="text search-input" placeholder="Search here...">
+                                        <a class="search-link" href="#"><i class="ri-search-line"></i></a>
+                                    </form>
+                                    <button type="submit" class="btn btn-primary search-data ml-2">Search</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        @for (int i = 0; i < 10; i++)
+                        {
+                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                                <div class="card-book" style="height: calc(100% - 30px);">
+                                    <div class="card-book-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div id="book-img" class="col-6 p-0 position-relative image-overlap-shadow">
+                                                <a href="/Bookpage">
+                                                    <img class="img-fluid rounded w-100" src="~/images/book-images/01.jpg
+                                                    " alt="">
+                                                    <div class="book-img-overlay">
+                                                        <div class="icon">
+                                                            <i class="fas fa-shopping-basket"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="mb-2">
+                                                    <h6 class="mb-2"> Reading on the World</h6>
+                                                    <p class="font-size-13 line-height mb-1">Jhone Steben</p>
+                                                </div>
+                                                <div class="price d-flex align-items-center">
+                                                    <span class="pr-1 old-price">$100</span>
+                                                    <h6>
+                                                        <b>$89</b>
+                                                    </h6>
+                                                </div>
+                                                <div class="product-action">
+                                                    <a href="">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                    <a href="" class="ml-2">
+                                                        <i class="fas fa-heart" style="color:red;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         }
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                    <div class="header-title">
+                        <h4 class="card-title mb-0">
+                            Similar Books
+                        </h4>
+                    </div>
+                    <div class="category-header-btn d-flex align-items-center">
+                        <a href="~/home/category" class="btn btn-primary view-more">View More</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="list-inline p-0 mb-0 row slick-initialized slick-slider">
+                        <div class="slick-list draggable">
+                            <ul class="similar-slider p-0">
+                                @for (int i = 0; i < 6; i++)
+                                {
+                                    <li class="col-md-3 slick-slide">
+                                        <div class="d-flex align-items-center">
+                                            <div id="book-img" class="col-6 p-0 position-relative image-overlap-shadow">
+                                                <a href="/Bookpage">
+                                                    <img class="img-fluid rounded w-100" src="~/images/book-images/01.jpg
+                                                    " alt="">
+                                                    <div class="book-img-overlay">
+                                                        <div class="icon">
+                                                            <i class="fas fa-shopping-basket"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="mb-2">
+                                                    <h6 class="mb-2"> Reading on the World</h6>
+                                                    <p class="font-size-13 line-height mb-1">Jhone Steben</p>
+                                                </div>
+                                                <div class="price d-flex align-items-center">
+                                                    <span class="pr-1 old-price">$100</span>
+                                                    <h6>
+                                                        <b>$89</b>
+                                                    </h6>
+                                                </div>
+                                                <div class="product-action">
+                                                    <a href="">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                    <a href="" class="ml-2">
+                                                        <i class="fas fa-heart" style="color:red;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                    <div class="header-title">
+                        <h4 class="card-title mb-0">
+                            Trendy Books
+                        </h4>
+                    </div>
+                    <div class="category-header-btn d-flex align-items-center">
+                        <a href="~/home/category" class="btn btn-primary view-more">View More</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="list-inline p-0 mb-0 row slick-initialized slick-slider">
+                        <div class="slick-list draggable">
+                            <ul class="similar-slider p-0">
+                                @for (int i = 0; i < 6; i++)
+                                {
+                                    <li class="col-md-3 slick-slide">
+                                        <div class="d-flex align-items-center">
+                                            <div id="book-img" class="col-6 p-0 position-relative image-overlap-shadow">
+                                                <a href="/Bookpage">
+                                                    <img class="img-fluid rounded w-100" src="~/images/book-images/01.jpg
+                                                    " alt="">
+                                                    <div class="book-img-overlay">
+                                                        <div class="icon">
+                                                            <i class="fas fa-shopping-basket"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="mb-2">
+                                                    <h6 class="mb-2"> Reading on the World</h6>
+                                                    <p class="font-size-13 line-height mb-1">Jhone Steben</p>
+                                                </div>
+                                                <div class="price d-flex align-items-center">
+                                                    <span class="pr-1 old-price">$100</span>
+                                                    <h6>
+                                                        <b>$89</b>
+                                                    </h6>
+                                                </div>
+                                                <div class="product-action">
+                                                    <a href="">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                    <a href="" class="ml-2">
+                                                        <i class="fas fa-heart" style="color:red;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                    <div class="header-title">
+                        <h4 class="card-title mb-0">
+                            Favorite Reads
+                        </h4>
+                    </div>
+                    <div class="category-header-btn d-flex align-items-center">
+                        <a href="~/home/category" class="btn btn-primary view-more">View More</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="favorites-slider" class="list-inline p-0 mb-0 row slick-initialized slick-slider">
+                        <div class="slick-list draggable">
+                            <ul class="slick-track p-0">
+                                @for (int i = 0; i < 6; i++)
+                                {
+                                    <li class="col-md-4 slick-slide" style="width: 712px;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="col-5 p-0 position-relative">
+                                                <a href="#">
+                                                    <img class="img-fluid rounded w-100" src="~/images/book-images/01.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-7">
+                                                <h5 class="mb-2">Casey Christie night book into find...</h5>
+                                                <p class="mb-2">Author : Michael klock</p>
+                                                <div class="d-flex justify-content-between align-items-center text-dark font-size-13">
+                                                    <span>Reading</span>
+                                                    <span class="mr-4">78%</span>
+                                                </div>
+                                                <a class="text-dark read-now-btn" href="#">Read Now<i class="fas fa-angle-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

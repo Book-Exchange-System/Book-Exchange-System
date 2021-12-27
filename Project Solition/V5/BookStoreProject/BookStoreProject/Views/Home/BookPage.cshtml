@@ -1,0 +1,231 @@
+﻿
+@{
+    ViewData["Title"] = "Book Page";
+    List<Book> favoriteBooks = ViewBag.FavoriteBooks;
+    string img_source = "";
+}
+
+<div id="book-page">
+    <div class="row">
+        <div class="col-lg-12">
+            @if (ViewBag.book != null)
+            {
+                Book book = ViewBag.book;
+                 img_source = book.Name.Replace(" ", "-").ToLower();
+                img_source = book.Category + "/" + img_source + "-" + book.Year + ".jpg";
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                        <div class="header-title">
+                            <h4 class="card-title mb-0">
+                                Book Description
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-sm-4 p-0">
+                                <div id="book-img" class="image-overlap-shadow" style="margin:20px 20px; max-width:400px;">
+                                    <img class="img-fluid rounded w-100" src="~/images/book-images/@img_source
+                                                    " alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-8 mt-5 ">
+                                <h2 class="mb-2">@book.Name</h2>
+                                <div class="rating">
+                                    @for (int i = 0; i < book.Rating; i += 2)
+                                    {
+                                        <i class="fas fa-star" style="color: #ffba68"></i>
+                                    }
+                                </div>
+                                <div class="price d-flex align-items-center" style="font-size:2rem;">
+                                    <span class="pr-1 old-price">$@book.Price</span>
+
+                                </div>
+                                <div class="mb-2 book-content">
+                                    <p class="mb-2" style="border-bottom:1px solid gray">
+                                        @System.Web.HttpUtility.HtmlEncode(book.About.Replace('"', ' '))
+                                        <br /><br />
+                                    </p>
+                                    <div class="d-flex align-items-center">
+                                        <p class="m-1 text-primary">Author :</p>
+                                        <p class="m-1">@book.Author</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4 d-flex align-items-center">
+                                    <a href="#" class="btn btn-primary view-more mr-2">Add To Cart</a>
+                                    <a href="#" class="btn btn-primary view-more mr-2">Read Sample</a>
+                                </div>
+                                <div class="mb-3 d-flex align-items-center">
+                                    <a href="#">
+                                        <span class="mr-2 text-primary">
+                                            <i class="fab fa-2x fa-gratipay" style="vertical-align: middle;"></i>
+                                        </span>
+                                        <span>Add to Wishlist</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+        </div>
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                    <div class="header-title">
+                        <h4 class="card-title mb-0">
+                            Similar Books
+                        </h4>
+                    </div>
+                    <div class="category-header-btn d-flex align-items-center">
+                        <a href="~/home/category" class="btn btn-primary view-more">View More</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="favorites-slider" class="list-inline p-0 mb-0 row slick-initialized slick-slider">
+                        <div class="slick-list draggable">
+                            <ul class="slick-track p-0">
+                                @for (int i = 0; i < 6; i++)
+                                {
+                                    <li class="col-md-4 slick-slide" style="width: 712px;">
+                                        <div class="d-flex align-items-center">
+                                            <div id="book-img" class="col-6 p-0 position-relative image-overlap-shadow">
+                                                <a href="/Bookpage">
+                                                    <img class="img-fluid rounded w-100" src="~/images/book-images/01.jpg
+                                                    " alt="">
+                                                    <div class="book-img-overlay">
+                                                        <div class="icon">
+                                                            <i class="fas fa-shopping-basket"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-7">
+                                                <h5 class="mb-2">Casey Christie night book into find...</h5>
+                                                <p class="mb-2">Author : Michael klock</p>
+                                                <br />
+                                                <a class="text-dark read-now-btn" href="#">Read Now<i class="fas fa-angle-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                    <div class="header-title">
+                        <h4 class="card-title mb-0">
+                            Trendy Books
+                        </h4>
+                    </div>
+                    <div class="category-header-btn d-flex align-items-center">
+                        <a href="~/home/category" class="btn btn-primary view-more">View More</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="list-inline p-0 mb-0 row slick-initialized slick-slider">
+                        <div class="slick-list draggable">
+                            <ul class="similar-slider p-0">
+                                @for (int i = 0; i < 6; i++)
+                                {
+                                    <li class="col-md-3 slick-slide">
+                                        <div class="d-flex align-items-center">
+                                            <div id="book-img" class="col-6 p-0 position-relative image-overlap-shadow">
+                                                <a href="/Bookpage">
+                                                    <img class="img-fluid rounded w-100" src="~/images/book-images/01.jpg
+                                                    " alt="">
+                                                    <div class="book-img-overlay">
+                                                        <div class="icon">
+                                                            <i class="fas fa-shopping-basket"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="mb-2">
+                                                    <h6 class="mb-2"> Reading on the World</h6>
+                                                    <p class="font-size-13 line-height mb-1">Jhone Steben</p>
+                                                </div>
+                                                <div class="price d-flex align-items-center">
+                                                    <span class="pr-1 old-price">$100</span>
+                                                    <h6>
+                                                        <b>$89</b>
+                                                    </h6>
+                                                </div>
+                                                <div class="product-action">
+                                                    <a href="">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                    <a href="" class="ml-2">
+                                                        <i class="fas fa-heart" style="color:red;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                    <div class="header-title">
+                        <h4 class="card-title mb-0">
+                            Favorite Reads
+                        </h4>
+                    </div>
+                    <div class="category-header-btn d-flex align-items-center">
+                        <a href="~/home/category" class="btn btn-primary view-more">View More</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="favorites-slider" class="list-inline p-0 mb-0 row slick-initialized slick-slider">
+                        <div class="slick-list draggable">
+                            <ul class="slick-track p-0">
+                                @foreach (Book book in favoriteBooks)
+                                {
+                                    img_source = book.Name.Replace(" ", "-").ToLower();
+                                    img_source = book.Category + "/" + img_source + "-" + book.Year + ".jpg";
+                                    <li class="col-md-4 slick-slide" style="width: 712px;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="col-5 p-0 position-relative">
+                                                <a href="~/book/@book.ID">
+                                                    <img class="img-fluid rounded w-100" src="~/images/book-images/@img_source" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-7">
+                                                <h4 class="mb-2">@book.Name</h4>
+                                                <p class="mb-2">Author: @book.Author</p>
+                                                <div class="mb-2 rating">
+                                                    @for (int i = 0; i < book.Rating; i += 2)
+                                                    {
+                                                        <i class="fas fa-star" style="color: #ffba68"></i>
+                                                    }
+                                                </div>
+                                                <div class="mb-2 price d-flex align-items-center">
+                                                    <span class="pr-1 old-price font-weight-bold">$@book.Price</span>
+
+                                                </div>
+                                                <a class="text-dark read-now-btn" href="~/book/@book.ID">Read Now<i class="fas fa-angle-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
