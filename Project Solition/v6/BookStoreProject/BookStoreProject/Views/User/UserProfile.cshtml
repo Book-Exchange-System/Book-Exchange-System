@@ -1,0 +1,244 @@
+﻿@{
+    User user = ViewBag.user;
+    List<Book> nowReading = ViewBag.nowReading;
+    List<Book> wantsToReadList = ViewBag.wantsToReadList;
+    List<Book> booksOwned = ViewBag.booksOwned;
+    List<Book> readAlreadyList = ViewBag.readAlreadyList;
+
+    ViewData["Title"] = user.Username;
+}
+<div id="user-profile">
+    <div class="row">
+        <div class="col-lg-4 text-center">
+            <div class="card">
+                <div class="card-body">
+                    <div id="book-img" class="image-overlap-shadow" style="margin:auto; max-width:250px;">
+                        <img class="img-fluid rounded w-100" src="~/images/person-icon.png" alt="">
+                    </div>
+                    <h4 class="card-title mb-0 mt-3">
+                        @{
+                            String name = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(user.Name);
+                            String surname = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(user.Surname);
+                            String username = name + " " + surname;
+
+                        }@username
+                    </h4>
+                    @if (booksOwned != null)
+                    {<p class="mb-0 font-weight-bold" style="font-size:13px;">Owned Books: @booksOwned.Count</p>}
+                    <p class="mb-0 font-size-12">E-mail : @user.Email</p>
+                    <p class="mb-0 font-size-12">Phone : @user.PhoneNumber</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="header-title">
+                        <h4 class="card-title mb-0">
+                            About
+                        </h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="mb-0 font-size-12">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat magna tellus, non blandit sem cursus id. Nulla pretium tincidunt commodo. Sed egestas augue orci, sit amet tempus neque hendrerit at. Aenean nisl velit, finibus eu augue laoreet, luctus ornare nibh. Etiam faucibus eleifend massa, ut mattis nisi blandit quis. Duis auctor vel lectus sed consectetur. Aliquam porta nisi vitae urna tincidunt efficitur. In at imperdiet lorem, sed venenatis orci. Nam a ultrices metus, ut aliquet tortor. Duis vitae tortor sed ligula lobortis viverra. Mauris vel eros malesuada, tincidunt nibh lobortis, venenatis leo. Suspendisse suscipit est et ligula vehicula viverra. Praesent rutrum posuere porttitor. Nunc felis quam, auctor venenatis justo vel, fringilla fringilla ipsum.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="header-title">
+                        <h4 class="card-title mb-0">
+                            Contact
+                        </h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="social d-inline-block align-items-center">
+                        <ul class="list-inline d-flex p-0 mb-0 align-items-center">
+                            <li>
+                                <a href="#" class="avatar-40 rounded-circle text-primary mr-2 facebook"><i class="fab fa-2x fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="avatar-40 rounded-circle text-primary mr-2 twitter"><i class="fab fa-2x fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="avatar-40 rounded-circle text-primary mr-2 youtube"><i class="fab fa-2x fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="avatar-40 rounded-circle text-primary pinterest"><i class="fab fa-2x fa-pinterest-p"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="header-title">
+                        <h4 class="card-title mb-0">
+                            Now Reading
+                        </h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        @if (nowReading != null)
+                        {
+
+
+                            @foreach (Book book in nowReading)
+                            {
+                                string img_source = book.Name.Replace(" ", "-").ToLower();
+                                img_source = book.Category + "/" + img_source + "-" + book.Year + ".jpg";
+                                <div class="col-sm-5 pr-0">
+                                    <a href="~/book/@book.ID">
+                                        <img class="img-fluid rounded w-100" src="~/images/book-images/@img_source" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-sm-7 mt-3 mt-sm-0">
+                                    <h4 class="mb-2">@book.Name</h4>
+                                    <p class="mb-2">Author: @book.Author</p>
+                                    <a href="~/book/@book.ID" class="btn btn-primary learn-more">Learn More</a>
+                                </div>
+                            }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                    <div class="header-title">
+                        <h4 class="card-title mb-0">
+                            Wants to Read Books
+                        </h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="favorites-slider" class="list-inline p-0 mb-0 row slick-initialized slick-slider">
+                        <div class="slick-list draggable">
+                            <ul class="slick-track p-0">
+                                @if (wantsToReadList != null)
+                                {
+                                    foreach (Book book in wantsToReadList)
+                                    {
+
+                                        string img_source = book.Name.Replace(" ", "-").ToLower();
+                                        img_source = book.Category + "/" + img_source + "-" + book.Year + ".jpg";
+                                        int md = 0;
+                                        if (wantsToReadList.Count > 4) md = 4;
+                                        else md = (12 / wantsToReadList.Count);
+                                        <li class="col-md-@md slick-slide" style="width: 712px;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="col-5 p-0 position-relative">
+                                                    <a href="~/book/@book.ID">
+                                                        <img class="img-fluid rounded w-100" src="~/images/book-images/@img_source" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="col-7">
+                                                    <h5 class="mb-2">@book.Name</h5>
+                                                    <p class="mb-2">Author : @book.Author</p>
+                                                    <a class="text-dark read-now-btn" href="~/book/@book.ID">Read Now<i class="fas fa-angle-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    }
+                                }
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                    <div class="header-title">
+                        <h4 class="card-title mb-0">
+                            Owned Books
+                        </h4>
+                    </div>
+                    <div class="category-header-btn d-flex align-items-center">
+                        <a asp-action="category" class="btn btn-primary view-more">View More</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        @if (booksOwned != null)
+                        {
+                            for (int i = 0; i < booksOwned.Count; i++)
+                            {
+                                if (i > 6) break;
+                                Book book = booksOwned[i];
+                                string img_source = book.Name.Replace(" ", "-").ToLower();
+                                img_source = book.Category + "/" + img_source + "-" + book.Year + ".jpg";
+
+                                <div class="col-sm-6 col-md-4 col-lg-4 mt-3">
+                                    <div class="card-book" style="height: calc(100% - 30px);">
+                                        <div class="card-book-body p-0">
+                                            <div class="d-flex align-items-center">
+                                                <div id="book-img" class="col-6 p-0 position-relative image-overlap-shadow">
+                                                    <a href="~/book/@book.ID">
+                                                        <img class="img-fluid rounded w-100" src="~/images/book-images/@img_source" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mb-2">
+                                                        <h6 class="mb-2"> @book.Name</h6>
+                                                        <p class="font-size-13 line-height mb-1">@book.Author</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                    <div class="header-title">
+                        <h4 class="card-title mb-0">
+                            Already Read
+                        </h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="favorites-slider" class="list-inline p-0 mb-0 row slick-initialized slick-slider">
+                        <div class="slick-list draggable">
+                            <ul class="slick-track p-0">
+                                @if (readAlreadyList != null)
+                                {
+                                    foreach (Book book in readAlreadyList)
+                                    {
+
+                                        string img_source = book.Name.Replace(" ", "-").ToLower();
+                                        img_source = book.Category + "/" + img_source + "-" + book.Year + ".jpg";
+                                        int md = 0;
+                                        if (wantsToReadList.Count > 4) md = 4;
+                                        else md = (12 / wantsToReadList.Count);
+                                        <li class="col-md-@md slick-slide" style="width: 712px;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="col-5 p-0 position-relative">
+                                                    <a href="~/book/@book.ID">
+                                                        <img class="img-fluid rounded w-100" src="~/images/book-images/@img_source" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="col-7">
+                                                    <h5 class="mb-2">@book.Name</h5>
+                                                    <p class="mb-2">Author : @book.Author</p>
+                                                    <a class="text-dark read-now-btn" href="~/book/@book.ID">Read Now<i class="fas fa-angle-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    }
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
