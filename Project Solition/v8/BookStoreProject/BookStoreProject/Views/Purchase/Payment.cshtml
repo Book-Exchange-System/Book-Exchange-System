@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewData["Title"] = "Payment";
+}
+<div id="payment" style="padding:4rem 0;">
+    <div class="row no-gutters">
+        <div class="col-md-6 m-auto align-self-center  page-content rounded">
+            <div class="card">
+                <div class="card-header">
+                    <div class="header-title">
+                        <h4 class="card-title mb-0">
+                            Payment Details
+                        </h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="col align-items-center">
+                            <div class="form-group col-sm-12">
+                                <label for="nameOnCard">Card Holder Name</label>
+                                <input pattern="[a-zA-Z-&#199-&#231-&#286-&#287-&#304-&#305-&#214-&#246-&#350-&#351-&#220-&#252]*" oninvalid="setCustomValidity('Please enter on alphabets only.')" type="text" class="form-control" name="nameOnCard" placeholder="Name On Card">
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <label for="CardNo">Credit Card Number</label>
+                                <input for="CardNo" type="text" class="form-control" id="name" value="" placeholder="" required />
+                            </div>
+                            <div class="form-group col-sm-2">
+                                <label for="secNo">Security</label>
+                                <input for="secNo" type="number" maxlength="3" class="form-control" id="name" value="" placeholder="" required />
+                            </div>
+                            <label class="col-sm-12">Expiration Date</label>
+                            <div class="form-group row m-1">
+                                <div class="form-group col-sm-4">
+                                    <select class="form-control form-search-control bg-white border-0" id="monthSelect" required>
+                                        <option selected="" disabled>Month</option>
+                                        @{
+                                            string[] arr = { "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" };
+                                            for (int i = 0; i < arr.Length; i++)
+                                            {
+                                                <option value="@arr[i]">@arr[i]</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <select class="form-control form-search-control bg-white border-0" id="yearSelect" required>
+                                        <option selected="" disabled>Year</option>
+                                        @{
+                                            for (int i = 2021; i < 2035; i++)
+                                            {
+                                                <option value="@i">@i</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+</div>
