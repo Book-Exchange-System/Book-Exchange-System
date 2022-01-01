@@ -16,7 +16,7 @@ namespace BookStoreProject.Controllers
         BookController bookController = new BookController();
         SqlCommand com = new SqlCommand();
         SqlDataReader dr;
-        SqlConnection con = new SqlConnection(@"Data Source=desktop-mruiip9;Initial Catalog=bookexchange;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=OsmanPC;Initial Catalog=bookexchange;Integrated Security=True");
 
         List<User> users = new List<User>();
         [Route("user/booktable/{type}")]
@@ -38,9 +38,17 @@ namespace BookStoreProject.Controllers
                 books = bookController.FetchBookWithStr(LoginController.currentUser.ReadAlreadyList);
                 ViewBag.bookType = "AlreadyReadBook";
             }
-
-
-                return View(books);
+            ViewBag.isGuest = false;
+            return View(books);
+        }
+        [Route("user/booktable/{userID:int}")]
+        public IActionResult DisplayBooks(int userID)
+        {
+            String cmd = "select * from [dbo].[User] where ID='" + userID + "';";
+            List<Book> books = books = bookController.FetchBookWithStr(FetchUser(cmd)[0].BooksOwned);
+            ViewBag.bookType = "OwnedBook";
+            ViewBag.isGuest = true;
+            return View(books);
         }
         public List<User> FetchUser(String commandText)
         {
@@ -89,37 +97,17 @@ namespace BookStoreProject.Controllers
                 throw e;
             }
         }
-        [Route("updatenowreadingbook/{bookID}")]
-        public IActionResult UpdateNowReadingBook(String bookID)
+        public void UpdateCurrentUser()
         {
-            LoginController.currentUser.NowReading = bookID;
-            UpdateCurrentUser();
-            return Redirect("~/user/" + LoginController.currentUser.Username);
-        }
-        [Route("updatewantstoreadlist/{bookID}")]
-        public IActionResult DeleteFromWantsToReadList(String bookID)
-        {
-            string books= LoginController.currentUser.WantsToReadList;
-            String temp = "";
-            int counter = 0;
-            List<Book> bookList = bookController.FetchBookWithStr(books);
-            for (int i = 0; i < bookList.Count; i++)
-            {
-                if (bookList[i].ID == Convert.ToInt32(bookID))
-                {
-                    bookList.RemoveAt(i);
-                    break;
-                }
-            }
-            foreach (Book book in bookList)
-            {
-                if (counter == 0) temp += book.ID;
-                else temp += (";" + book.ID);
-                counter++;
-            }
-            LoginController.currentUser.WantsToReadList = temp;
-            UserController.UpdateCurrentUser();
-            return Redirect("~/user/booktable/wantstoreadbooks");
+            User user = LoginController.currentUser;
+            String commandText = "Update [dbo].[User] Set Username = '" + user.Username + "', Name = '" + user.Name + "', Surname = '" + user.Surname + "', Password = '" + user.Password + "', Birthday = '" + user.Birthday.ToString("yyyy-MM-dd") + "', PhoneNumber = '" + user.PhoneNumber + "', Email = '" + user.Email + "', About = '" + user.About + "', Facebook = '" + user.Facebook + "', Twitter = '" + user.Twitter + "', Youtube = '" + user.Youtube + "', Pinterest = '" + user.Pinterest + "', BooksOwned = '" + user.BooksOwned + "', WantsToReadList = '" + user.WantsToReadList + "', ReadAlreadyList = '" + user.ReadAlreadyList + "', NowReading = '" + user.NowReading + "' where ID = '" + user.ID + "';";
+            con.Open();
+            com = con.CreateCommand();
+            com.CommandType = CommandType.Text;
+            com.CommandText = commandText;
+            com.ExecuteNonQuery();
+            con.Close();
+            LoginController.currentUser = FetchUser("select * from [dbo].[User] where ID = '"+ LoginController.currentUser.ID.ToString() + "';")[0];
         }
         [HttpGet]
         [Route("accountsettings")]
@@ -188,7 +176,6 @@ namespace BookStoreProject.Controllers
                 flag = true;
             }
             UpdateCurrentUser();
-            LoginController.currentUser = currentUser;
             if (flag)
             {
                 return RedirectToAction("signout", "login");
@@ -199,6 +186,102 @@ namespace BookStoreProject.Controllers
                 return RedirectToAction("index", "home");
             }
         }
+
+        [Route("updatenowreadingbook/{bookID}")]
+        public IActionResult UpdateNowReadingBook(String bookID)
+        {
+            LoginController.currentUser.NowReading = bookID;
+            UpdateCurrentUser();
+            return Redirect("~/user/" + LoginController.currentUser.Username);
+        }
+        [Route("updatewantstoreadlist/{bookID}")]
+        public IActionResult DeleteFromWantsToReadList(String bookID)
+        {
+            string books= LoginController.currentUser.WantsToReadList;
+            String temp = "";
+            int counter = 0;
+            List<Book> bookList = bookController.FetchBookWithStr(books);
+            for (int i = 0; i < bookList.Count; i++)
+            {
+                if (bookList[i].ID == Convert.ToInt32(bookID))
+                {
+                    bookList.RemoveAt(i);
+                    break;
+                }
+            }
+            foreach (Book book in bookList)
+            {
+                if (counter == 0) temp += book.ID;
+                else temp += (";" + book.ID);
+                counter++;
+            }
+            LoginController.currentUser.WantsToReadList = temp;
+            UpdateCurrentUser();
+            return Redirect("~/user/booktable/wantstoreadbooks");
+        }
+        [Route("updatealreadyreadlist/{bookID}")]
+        public IActionResult DeleteFromAlreadyReadList(String bookID)
+        {
+            string books = LoginController.currentUser.ReadAlreadyList;
+            String temp = "";
+            int counter = 0;
+            List<Book> bookList = bookController.FetchBookWithStr(books);
+            for (int i = 0; i < bookList.Count; i++)
+            {
+                if (bookList[i].ID == Convert.ToInt32(bookID))
+                {
+                    bookList.RemoveAt(i);
+                    break;
+                }
+            }
+            foreach (Book book in bookList)
+            {
+                if (counter == 0) temp += book.ID;
+                else temp += (";" + book.ID);
+                counter++;
+            }
+            LoginController.currentUser.ReadAlreadyList = temp;
+            UpdateCurrentUser();
+            return Redirect("~/user/booktable/alreadyreadbooks");
+        }
+        [Route("addtoalreadyreadlist/{bookID}")]
+        public IActionResult AddToAlreadyReadList(String bookID)
+        {
+            string books = LoginController.currentUser.ReadAlreadyList;
+            List<Book> bookList = bookController.FetchBookWithStr(books);
+            foreach (Book book in bookList)
+            {
+                if(book.ID == Convert.ToInt32(bookID))
+                {
+                    return Redirect("~/user/booktable/ownedbooks");
+                }
+            }
+            if (books.Length > 0) books += (";" + bookID);
+            else books = bookID;
+            LoginController.currentUser.ReadAlreadyList = books;
+            UpdateCurrentUser();
+            return Redirect("~/user/booktable/ownedbooks");
+        }
+        [Route("addtowantstoreadlist/{bookID}")]
+        public IActionResult AddToWantsToReadList(String bookID)
+        {
+            if (LoginController.currentUser == null) return RedirectToAction("login", "login");
+            string books = LoginController.currentUser.WantsToReadList;
+            List<Book> bookList = bookController.FetchBookWithStr(books);
+            foreach (Book book in bookList)
+            {
+                if (book.ID == Convert.ToInt32(bookID))
+                {
+                    return Redirect(Request.Headers["Referer"].ToString());
+                }
+            }
+            if (books.Length > 0) books += (";" + bookID);
+            else books = bookID;
+            LoginController.currentUser.WantsToReadList = books;
+            UpdateCurrentUser();
+            return Redirect(Request.Headers["Referer"].ToString());
+        }
+        
 
         [Route("user/{username}")]
         public IActionResult UserProfile(string username)
@@ -266,22 +349,7 @@ namespace BookStoreProject.Controllers
                 con.Close();
             }
         }
-        public static void UpdateCurrentUser()
-        {
-            User user = LoginController.currentUser;
-            SqlCommand com = new SqlCommand();
-            SqlDataReader dr;
-            SqlConnection con = new SqlConnection(@"Data Source=desktop-mruiip9;Initial Catalog=bookexchange;Integrated Security=True");
-
-            String commandText = "Update [dbo].[User] Set Username = '"+user.Username+"', Name = '" + user.Name + "', Surname = '" + user.Surname + "', Password = '" + user.Password + "', Birthday = '" + user.Birthday.ToString("yyyy-MM-dd") + "', PhoneNumber = '" + user.PhoneNumber + "', Email = '" + user.Email + "', About = '" + user.About + "', Facebook = '" + user.Facebook + "', Twitter = '" + user.Twitter + "', Youtube = '" + user.Youtube + "', Pinterest = '" + user.Pinterest + "', BooksOwned = '" + user.BooksOwned + "', WantsToReadList = '" + user.WantsToReadList + "', ReadAlreadyList = '" + user.ReadAlreadyList + "', NowReading = '" + user.NowReading + "' where ID = '" +user.ID+"';";
-            con.Open();
-            com = con.CreateCommand();
-            com.CommandType = CommandType.Text;
-            com.CommandText = commandText;
-            com.ExecuteNonQuery();
-            con.Close();
-        }
-
+       
         
 
         

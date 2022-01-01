@@ -12,7 +12,7 @@ namespace BookStoreProject.Controllers
     {
         SqlCommand com = new SqlCommand();
         SqlDataReader dr;
-        SqlConnection con = new SqlConnection(@"Data Source=desktop-mruiip9;Initial Catalog=bookexchange;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=OsmanPC;Initial Catalog=bookexchange;Integrated Security=True");
 
 
         BookController bookController = new BookController();

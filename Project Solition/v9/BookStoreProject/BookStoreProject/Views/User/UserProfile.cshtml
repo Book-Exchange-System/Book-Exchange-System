@@ -1,5 +1,6 @@
 ﻿@{
     User user = ViewBag.user;
+    User currentUser = BookStoreProject.Controllers.LoginController.currentUser;
     List<Book> nowReading = ViewBag.nowReading;
     List<Book> wantsToReadList = ViewBag.wantsToReadList;
     List<Book> booksOwned = ViewBag.booksOwned;
@@ -139,9 +140,13 @@
                             Wants to Read Books
                         </h4>
                     </div>
-                    <div class="category-header-btn d-flex align-items-center">
-                        <a href="~/user/booktable/wantstoreadbooks" class="btn btn-primary view-more">Edit</a>
-                    </div>
+                    @if(currentUser != null && currentUser.ID == user.ID)
+                    {
+                <div class="category-header-btn d-flex align-items-center">
+                    <a href="~/user/booktable/wantstoreadbooks" class="btn btn-primary view-more">Edit</a>
+                </div>
+            }
+                    
                 </div>
                 <div class="card-body">
                     <div id="favorites-slider" class="list-inline p-0 mb-0 row slick-initialized slick-slider">
@@ -186,9 +191,19 @@
                             Owned Books
                         </h4>
                     </div>
-                    <div class="category-header-btn d-flex align-items-center">
-                        <a href="~/user/booktable/ownedbooks" class="btn btn-primary view-more">Edit</a>
-                    </div>
+                    @if (currentUser != null && currentUser.ID == user.ID)
+                    {
+                        <div class="category-header-btn d-flex align-items-center">
+                            <a href="~/user/booktable/ownedbooks" class="btn btn-primary view-more">Edit</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="category-header-btn d-flex align-items-center">
+                            <a href="~/user/booktable/@user.ID" class="btn btn-primary view-more">View More</a>
+                        </div>
+                    }
+
                 </div>
                 <div class="card-body">
                     <div class="row">
@@ -233,9 +248,13 @@
                             Already Read
                         </h4>
                     </div>
-                    <div class="category-header-btn d-flex align-items-center">
-                        <a href="~/user/booktable/alreadyreadbooks" class="btn btn-primary view-more">Edit</a>
-                    </div>
+                    @if (currentUser!=null&&currentUser.ID == user.ID)
+                    {
+                        <div class="category-header-btn d-flex align-items-center">
+                            <a href="~/user/booktable/alreadyreadbooks" class="btn btn-primary view-more">Edit</a>
+                        </div>
+                    }
+
                 </div>
                 <div class="card-body">
                     <div id="favorites-slider" class="list-inline p-0 mb-0 row slick-initialized slick-slider">

@@ -13,11 +13,11 @@ namespace BookStoreProject.Controllers
     {
 
 
-
+        UserController userController = new UserController();
         BookController bookController = new BookController();
         SqlCommand com = new SqlCommand();
         SqlDataReader dr;
-        SqlConnection con = new SqlConnection(@"Data Source=desktop-mruiip9;Initial Catalog=bookexchange;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=OsmanPC;Initial Catalog=bookexchange;Integrated Security=True");
 
         List<User> users = new List<User>();
 
@@ -73,7 +73,7 @@ namespace BookStoreProject.Controllers
             {
                 LoginController.currentUser.BooksOwned = books;
             }
-            UserController.UpdateCurrentUser();
+            userController.UpdateCurrentUser();
             BookController.shoppingCard = new List<Book>();
             return RedirectToAction("index", "home");
         }
