@@ -1,0 +1,61 @@
+﻿
+@{ ViewData["Title"] = "Display Data";
+    string[] table_headers = new string[]
+    {
+        "Photo","ID","Name","Author","Category","PageCount","Price","Rating","Year","Actions"
+                        }; }
+
+<div class="table">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                @foreach (var head in table_headers)
+                {
+    <th>@head</th>}
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                foreach (var data in Model)
+                {
+
+
+            <tr>
+
+                <td>
+                    @{ string img_source = data.Name.Replace(" ", "-").ToLower();
+                        img_source = data.Category + "/" + img_source + "-" + data.Year + ".jpg"; }
+
+                    <img class="img-fluid rounded" style="width:70px;" src="~/images/book-images/@img_source" />
+
+                </td>
+                <td>@data.ID</td>
+                <td>@data.Name</td>
+                <td>@data.Author</td>
+                <td>@data.Category</td>
+                <td>@data.PageCount</td>
+                <td>@data.Price</td>
+                <td>@data.Rating</td>
+                <td>@data.Year</td>
+                @if (ViewBag.bookType == "OwnedBook")
+                {
+            <td>
+                <a class="btn btn-primary" href="~/updatenowreadingbook/@data.ID">Now Reading</a>
+                <a class="btn btn-primary" href="~/book/@data.ID">Already Read</a>
+                <a class="btn btn-danger" href="~/book/@data.ID">Want To Read</a>
+            </td>
+ }
+        else if (ViewBag.bookType == "WantsToRead")
+        {
+            <td><a class="btn btn-danger" href="~/updatewantstoreadlist/@data.ID">Remove</a></td> }
+                                else if (ViewBag.bookType == "AlreadyReadBook")
+                                {
+            <td><a class="btn btn-danger" href="~/book/@data.ID">Remove</a></td>}
+
+            </tr>}
+            }
+        </tbody>
+
+    </table>
+</div>
