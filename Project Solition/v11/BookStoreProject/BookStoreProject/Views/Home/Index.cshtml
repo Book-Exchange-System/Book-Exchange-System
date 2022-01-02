@@ -113,13 +113,13 @@
                 </div>
                 <div class="card-body">
                     <div class="row align-items-center">
-                        <div class="col-sm-5 pr-0" style="width:280px;height:400px;overflow:hidden;">
+                        <div class="col-sm-5 pr-0" >
                             @{
                                 img_source = featuredBook.Name.Replace(" ", "-").ToLower();
                                 img_source = featuredBook.Category + "/" + img_source + "-" + featuredBook.Year + ".jpg";
                             }
                             <a href="~/book/@featuredBook.ID">
-                                <img class="img-fluid rounded w-100" src="~/images/book-images/@img_source" alt="">
+                                <img class="img-fluid rounded w-100" style="width:280px;height:450px;overflow:hidden;"  src="~/images/book-images/@img_source" alt="">
                             </a>
                         </div>
                         <div class="col-sm-7 mt-3 mt-sm-0">
@@ -152,15 +152,15 @@
                 </div>
                 <div class="card-body">
                     <div class="row align-items-center">
-                        @*@if (trendyBooks.Count > 0)
+                       @if (trendyBooks.Count > 0)
                         {
                             Book book = trendyBooks[0];
                             img_source = book.Name.Replace(" ", "-").ToLower();
                             img_source = book.Category + "/" + img_source + "-" + book.Year + ".jpg";
 
-                            <div class="col-sm-5 pr-0" style="width:280px;height:400px;overflow:hidden;">
+                            <div class="col-sm-5 pr-0">
                                 <a href="~/book/@book.ID">
-                                    <img class="img-fluid rounded w-100" src="~/images/book-images/@img_source" alt="">
+                                    <img class="img-fluid rounded w-100"  style="width:280px;height:450px;overflow:hidden;" src="~/images/book-images/@img_source" alt="">
                                 </a>
                             </div>
                             <div class="col-sm-7 mt-3 mt-sm-0">
@@ -174,7 +174,7 @@
                                 </div>
                                 <a href="~/book/@book.ID" class="btn btn-primary learn-more">Learn More</a>
                             </div>
-                        }*@
+                        }
 
                     </div>
                 </div>

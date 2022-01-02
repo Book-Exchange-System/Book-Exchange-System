@@ -112,10 +112,17 @@
                 </div>
                 <!--Search bar-->
                 <div id="search-bar" class="search-bar">
-                    <form action="#" class="searchbox">
-                        <input type="text" class="text search-input" placeholder="Search Here...">
-                        <a class="search-link" href="#"><i class="ri-search-line"></i></a>
-                    </form>
+                    <div class="searchbox">
+                        <input id="searchbox" type="text" class="text search-input" onchange="newLocation()" placeholder="Search Here...">
+                        
+                    </div>
+                    <script>
+                        var searchbox = document.getElementById("searchbox");
+                        function newLocation() {
+                            window.location = "/category/" + searchbox.value;
+                        }
+
+                    </script>
                 </div>
                 <!--Navbar Collapse-->
                 <div class="navbar-collapse collapse">

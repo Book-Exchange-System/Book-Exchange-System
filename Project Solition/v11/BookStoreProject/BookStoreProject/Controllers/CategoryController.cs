@@ -40,28 +40,52 @@ namespace BookStoreProject.Controllers
             }
         }
         [Route("category")]
+        [Route("category/{searchText?}")]
         [HttpGet]
-        public ActionResult Category()
+        public ActionResult Category(string searchText)
         {
-                
-                String comd = "SELECT Top 10 * FROM [dbo].[Book] Order By Book_Rating Desc";
-                List<Book> books = bookController.FetchBook(comd);
-                ViewBag.FavoriteBooks = books;
+
+            String comd = "";
+            List<Book> allbooks = new List<Book>();
+            if (searchText !=null&& searchText.Length > 0)
+            {
+                List<Book> tempBooks = new List<Book>();
                 comd = "SELECT * FROM[bookexchange].[dbo].[Book]";
-                List<Book> allbooks = bookController.FetchBook(comd);
-                ViewBag.CategoryBooks = allbooks;
-                comd = "SELECT * FROM[bookexchange].[dbo].[Category]";
-                List<String> categories = FetchDataInView(comd, "Book_Category");
-                ViewBag.Categories = categories;
-                comd = "SELECT * FROM[bookexchange].[dbo].[Year]";
-                List<String> years = FetchDataInView(comd, "Book_Year");
-                ViewBag.Years = years;
-                comd = "SELECT * FROM[bookexchange].[dbo].[Author]";
-                List<String> authors = FetchDataInView(comd, "Book_Author");
-                ViewBag.Authors = authors;
-                List<Book> trendyBooks = bookController.getTrendyBooks();
-                ViewBag.trendyBooks = trendyBooks;
-                return View();
+                allbooks = bookController.FetchBook(comd);
+                foreach(Book book in allbooks)
+                {
+                    searchText = searchText.ToLower();
+                    bool flag = false;
+                    if (book.Name.ToLower().Contains(searchText)) flag = true;
+                    else if (book.Author.ToLower().Contains(searchText)) flag = true;
+                    else if (book.Category.ToLower().Contains(searchText)) flag = true;
+                    else if (book.About.ToLower().Contains(searchText)) flag = true;
+                    if (flag) tempBooks.Add(book);
+                }
+                allbooks = tempBooks;
+            }
+            else
+            {
+                comd = "SELECT * FROM[bookexchange].[dbo].[Book]";
+                allbooks = bookController.FetchBook(comd);
+            }
+            ViewBag.CategoryBooks = allbooks;
+            comd = "SELECT Top 10 * FROM [dbo].[Book] Order By Book_Rating Desc";
+            List<Book> books = bookController.FetchBook(comd);
+            ViewBag.FavoriteBooks = books;
+                
+            comd = "SELECT * FROM[bookexchange].[dbo].[Category]";
+            List<String> categories = FetchDataInView(comd, "Book_Category");
+            ViewBag.Categories = categories;
+            comd = "SELECT * FROM[bookexchange].[dbo].[Year]";
+            List<String> years = FetchDataInView(comd, "Book_Year");
+            ViewBag.Years = years;
+            comd = "SELECT * FROM[bookexchange].[dbo].[Author]";
+            List<String> authors = FetchDataInView(comd, "Book_Author");
+            ViewBag.Authors = authors;
+            List<Book> trendyBooks = bookController.getTrendyBooks();
+            ViewBag.trendyBooks = trendyBooks;
+            return View();
         }
         [HttpPost]
         public ActionResult Category(Book book)
