@@ -1,0 +1,361 @@
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\appsettings.json
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.exe
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.deps.json
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.runtimeconfig.json
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.runtimeconfig.dev.json
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\ref\BookStoreProject.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.pdb
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.Views.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.Views.pdb
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.AssemblyInfoInputs.cache
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.AssemblyInfo.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.csproj.CoreCompileInputs.cache
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorAssemblyInfo.cache
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorAssemblyInfo.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\staticwebassets\BookStoreProject.StaticWebAssets.Manifest.cache
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\staticwebassets\BookStoreProject.StaticWebAssets.xml
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\scopedcss\bundle\BookStoreProject.styles.css
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.TagHelpers.input.cache
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.TagHelpers.output.cache
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorCoreGenerate.cache
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorTargetAssemblyInfo.cache
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorTargetAssemblyInfo.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.Views.pdb
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\ref\BookStoreProject.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.pdb
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.genruntimeconfig.cache
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.csproj.CopyComplete
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.csproj.AssemblyReference.cache
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\web.config
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Security.AccessControl.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Security.Permissions.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Windows.Extensions.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\checkout.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\bin\Debug\net5.0\Microsoft.SqlServer.Types.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\web.config
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\appsettings.json
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.exe
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.deps.json
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.runtimeconfig.json
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.runtimeconfig.dev.json
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\ref\BookStoreProject.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.pdb
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.Views.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.Views.pdb
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\Microsoft.SqlServer.Types.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Security.AccessControl.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Security.Permissions.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Windows.Extensions.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.csproj.AssemblyReference.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.AssemblyInfoInputs.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.AssemblyInfo.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.csproj.CoreCompileInputs.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorAssemblyInfo.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorAssemblyInfo.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\staticwebassets\BookStoreProject.StaticWebAssets.Manifest.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\staticwebassets\BookStoreProject.StaticWebAssets.xml
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\scopedcss\bundle\BookStoreProject.styles.css
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.TagHelpers.input.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.TagHelpers.output.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorCoreGenerate.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\BookPage.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\Category.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\Checkout.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\table_view.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorTargetAssemblyInfo.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorTargetAssemblyInfo.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.Views.pdb
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.csproj.CopyComplete
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\ref\BookStoreProject.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.pdb
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.genruntimeconfig.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Login\Login.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\_LoginLayout.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Login\Register.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Login\user_table.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Login\Login.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Login\Register.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\_LoginLayout.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\User\user_table.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\User\UserProfile.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Category\Category.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Book\BookPage.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Admin\books_table.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Admin\users_table.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\User\AccountSettings.cshtml.g.cs
+C:\Users\osman\source\repos\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Purchase\Payment.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\web.config
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\appsettings.json
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.exe
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.deps.json
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.runtimeconfig.json
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.runtimeconfig.dev.json
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\ref\BookStoreProject.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.pdb
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.Views.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.Views.pdb
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\Microsoft.SqlServer.Types.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Security.AccessControl.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Security.Permissions.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Windows.Extensions.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.csproj.AssemblyReference.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.AssemblyInfoInputs.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.AssemblyInfo.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.csproj.CoreCompileInputs.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorAssemblyInfo.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorAssemblyInfo.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\staticwebassets\BookStoreProject.StaticWebAssets.Manifest.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\staticwebassets\BookStoreProject.StaticWebAssets.xml
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\scopedcss\bundle\BookStoreProject.styles.css
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.TagHelpers.input.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.TagHelpers.output.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorCoreGenerate.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Admin\books_table.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Admin\users_table.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Book\BookPage.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Category\Category.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Login\Login.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Login\Register.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Purchase\Payment.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\_LoginLayout.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\User\AccountSettings.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\User\UserProfile.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorTargetAssemblyInfo.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorTargetAssemblyInfo.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.Views.pdb
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.csproj.CopyComplete
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\ref\BookStoreProject.dll
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.pdb
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.genruntimeconfig.cache
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Book\Checkout.cshtml.g.cs
+C:\Users\ecems\Desktop\Book-Exchange-System-main\Project Solition\v8\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\User\DisplayBooks.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\appsettings.json
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\web.config
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.exe
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.deps.json
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.runtimeconfig.json
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.runtimeconfig.dev.json
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\ref\BookStoreProject.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.pdb
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.Views.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.Views.pdb
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\Microsoft.SqlServer.Types.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Security.AccessControl.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Security.Permissions.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Windows.Extensions.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.csproj.AssemblyReference.cache
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.AssemblyInfoInputs.cache
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.AssemblyInfo.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.csproj.CoreCompileInputs.cache
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorAssemblyInfo.cache
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorAssemblyInfo.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\staticwebassets\BookStoreProject.StaticWebAssets.Manifest.cache
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\staticwebassets\BookStoreProject.StaticWebAssets.xml
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\scopedcss\bundle\BookStoreProject.styles.css
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.TagHelpers.input.cache
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.TagHelpers.output.cache
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorCoreGenerate.cache
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Admin\books_table.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Admin\users_table.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Book\BookPage.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Book\Checkout.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Category\Category.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Login\Login.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Login\Register.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Purchase\Payment.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\_LoginLayout.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\User\AccountSettings.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\User\DisplayBooks.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\User\UserProfile.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorTargetAssemblyInfo.cache
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorTargetAssemblyInfo.cs
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.Views.pdb
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.csproj.CopyComplete
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\ref\BookStoreProject.dll
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.pdb
+C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\v9\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.genruntimeconfig.cache
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\web.config
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\appsettings.json
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.exe
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.deps.json
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.runtimeconfig.json
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.runtimeconfig.dev.json
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\ref\BookStoreProject.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.pdb
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.Views.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\BookStoreProject.Views.pdb
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\Microsoft.SqlServer.Types.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Security.AccessControl.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Security.Permissions.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\System.Windows.Extensions.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.csproj.AssemblyReference.cache
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.AssemblyInfoInputs.cache
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.AssemblyInfo.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.csproj.CoreCompileInputs.cache
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorAssemblyInfo.cache
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorAssemblyInfo.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\staticwebassets\BookStoreProject.StaticWebAssets.Manifest.cache
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\staticwebassets\BookStoreProject.StaticWebAssets.xml
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\scopedcss\bundle\BookStoreProject.styles.css
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.TagHelpers.input.cache
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.TagHelpers.output.cache
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorCoreGenerate.cache
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Admin\books_table.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Admin\users_table.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Book\BookPage.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Book\Checkout.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Category\Category.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Login\Login.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Login\Register.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Purchase\Payment.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\_LoginLayout.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\User\AccountSettings.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\User\DisplayBooks.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\User\UserProfile.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorTargetAssemblyInfo.cache
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.RazorTargetAssemblyInfo.cs
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.Views.pdb
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.csproj.CopyComplete
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\ref\BookStoreProject.dll
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.pdb
+C:\Users\ecems\Desktop\v10\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.genruntimeconfig.cache

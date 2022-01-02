@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Check Out Page";
+    List<Book> shoppingCard = ViewBag.shoppingCard;
+}
+<div id="checkout">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                    <div class="header-title">
+                        <h4 class="card-title mb-0">
+                            Shopping Cart
+                        </h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul class="list-inline p-0 m-0">
+                        @if (shoppingCard.Count == 0)
+                        {
+                            <div class="text-danger">
+                                <strong>Your shopping cart is empty.</strong>
+                            </div>
+                        }
+                        @foreach (Book book in shoppingCard)
+                        {
+
+
+                            string img_source = book.Name.Replace(" ", "-").ToLower();
+                            img_source = book.Category + "/" + img_source + "-" + book.Year + ".jpg";
+                            <li class="checkout-product">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-2">
+                                        <span class="checkout-product-img">
+                                            <a href="~/book/@book.ID">
+                                                <img class="img-fluid rounded w-100" src="~/images/book-images/@img_source
+                                                    " alt="">
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="checkout-product-details">
+                                            <h5>@book.Name</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="row">
+                                            <div class="col-sm-10">
+                                                <div class="row align-items-center mt-2">
+                                                    <div class="col-sm-7 col-md-6">
+                                                    </div>
+                                                    <div class="col-sm-5 col-md-6">
+                                                        <span class="product-price">$@book.Price<span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <a href="~/removeShoppingCart/@book.ID" class="text-dark font-size-20"><i class="fas fa-trash" style="position:relative; top: 20%;"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+        @if (shoppingCard.Count != 0)
+        {
+            <div class="col-lg-4">
+                <div class="card">
+                    
+                    <div class="card-body">
+                        @{
+                            int totalPrice = 0;
+                            foreach (Book book in shoppingCard)
+                            {
+                                totalPrice += book.Price;
+                            }
+
+                        }
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="text-dark">
+                                <strong>Total</strong>
+                            </span>
+                            <span class="text-dark">
+                                <strong>$@totalPrice</strong>
+                            </span>
+                        </div>
+
+
+                        <a href="~/payment" class="btn btn-primary mt-3 w-100">Go Payment</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
