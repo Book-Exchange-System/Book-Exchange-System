@@ -3,6 +3,7 @@
     User user = ViewBag.user;
     ViewData["Title"] = "Edit Profile - " + user.Username;
 }
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>
 <div id="user-profile">
     <div class="row">
         <div class="col-lg-12">
@@ -104,7 +105,7 @@
                                     </div>
                                     <script>
                                     var currentPassword = document.getElementById("currentPassword");
-                                    function validatePassword() {
+                                        function validatePassword() {
                                         if (currentPassword.value != @user.Password) {
                                             currentPassword.setCustomValidity("This is not your current password!");
                                         } else {
@@ -136,11 +137,10 @@
                                         }
 
                                         password.onchange = validatePassword;
-                                        confirm_password.onkeyup = validatePassword;</script>
+                                        confirm_password.onkeyup = validatePassword;
+                                    </script>
                                     <button type="submit" class="btn btn-primary mr-2">Submit</button>
                                     <button type="reset" class="btn btn-danger">Cancel</button>
-
-
                                 </form>
                             </div>
                         </div>
@@ -174,8 +174,8 @@
                                     </div>
                                     <button type="submit" class="btn btn-primary mr-2">Submit</button>
                                 </form>
-                                
-                                
+
+
                             </div>
                         </div>
                     </div>
