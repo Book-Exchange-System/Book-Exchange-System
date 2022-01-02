@@ -3802,11 +3802,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ecems\\Desktop\\v10\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj",
+      "projectUniqueName": "C:\\Users\\ecems\\Desktop\\Son\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj",
       "projectName": "BookStoreProject",
-      "projectPath": "C:\\Users\\ecems\\Desktop\\v10\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj",
+      "projectPath": "C:\\Users\\ecems\\Desktop\\Son\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj",
       "packagesPath": "C:\\Users\\ecems\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ecems\\Desktop\\v10\\BookStoreProject\\BookStoreProject\\obj\\",
+      "outputPath": "C:\\Users\\ecems\\Desktop\\Son\\BookStoreProject\\BookStoreProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ecems\\AppData\\Roaming\\NuGet\\NuGet.Config",

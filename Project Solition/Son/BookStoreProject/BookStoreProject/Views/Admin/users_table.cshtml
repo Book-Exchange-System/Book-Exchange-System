@@ -35,11 +35,8 @@
                 <td>@data.Email</td>
                 <td>@data.Gender</td>
                 <td>
-                    <a class="btn btn-primary" asp-action="delete">
+                    <a  href="~/delete/@data.ID" class="btn btn-primary">
                         Delete
-                    </a>
-                    <a class="btn btn-primary" asp-action="edit">
-                        Edit
                     </a>
                 </td>
             </tr>                }

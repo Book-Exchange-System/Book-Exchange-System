@@ -65,6 +65,20 @@ namespace BookStoreProject.Controllers
                 throw e;
             }
         }
+
+        [Route("readbook/{bookID}")]
+        public IActionResult BookReader(String bookID)
+        {
+            List<Book> ownedBooks = FetchBookWithStr(LoginController.currentUser.BooksOwned);
+            foreach (Book book in ownedBooks)
+            {
+                if (book.ID.ToString() == bookID)
+                {
+                    return View(book);
+                }
+            }
+            return Redirect(Request.Headers["Referer"].ToString());
+        }
         public List<Book> FetchBook(string commandText)
         {
             List<Book> books = new List<Book>();

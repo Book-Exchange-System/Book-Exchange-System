@@ -361,6 +361,22 @@ namespace BookStoreProject.Controllers
             }
         }
 
+        [Route("delete/{userid}")]
+        public IActionResult DeleteUser(String userid)
+        {
+            if (LoginController.currentUser.UserType == "a")
+            {
+                String cmd = "Delete From [dbo].[User] where [User].ID ='" + userid + "';";
+                con.Open();
+                com = con.CreateCommand();
+                com.CommandType = CommandType.Text;
+                com.CommandText = cmd;
+                com.ExecuteNonQuery();
+                con.Close();  
+            }
+
+            return Redirect(Request.Headers["Referer"].ToString());
+        }
 
 
 
