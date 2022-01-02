@@ -1,7 +1,6 @@
 ﻿@model Book
 @{
     ViewData["Title"] = "Category Page";
-    List<Book> trendyBooks= ViewBag.trendyBooks;
     List<Book> books = ViewBag.CategoryBooks;
     List<String> categories = ViewBag.Categories;
     List<String> authors = ViewBag.Authors;
@@ -141,7 +140,7 @@
                     <div class="list-inline p-0 mb-0 row slick-initialized slick-slider">
                         <div class="slick-list draggable">
                            <ul class="similar-slider p-0">
-                                @foreach(Book book in trendyBooks)
+                                @foreach(Book book in favoriteBooks)
                                 {
                                     img_source = book.Name.Replace(" ", "-").ToLower();
                                     img_source = book.Category + "/" + img_source + "-" + book.Year + ".jpg";

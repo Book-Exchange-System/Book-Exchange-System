@@ -174,12 +174,12 @@ namespace BookStoreProject.Controllers
         {
             ViewBag.shoppingCard = shoppingCard;
             return View();
-        }
+        }/*
         public List<Book> getTrendyBooks()
         {
             string cmd = "SELECT b.* FROM    Book b INNER JOIN Purchase p ON b.Book_ID=p.BookID GROUP BY b.Book_ID, b.Book_About,b.Book_Author,b.Book_Category,b.Book_Name,b.Book_PageCount,b.Book_year,b.Book_Price,b.Book_Rating Order by COUNT(b.Book_ID) desc";
             return FetchBook(cmd);
-        }
+        }*/
     }
 
 }

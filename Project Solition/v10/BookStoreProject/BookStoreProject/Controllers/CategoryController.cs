@@ -17,6 +17,8 @@ namespace BookStoreProject.Controllers
 
 
         BookController bookController = new BookController();
+
+        [Obsolete]
         public List<String> FetchDataInView(String command,String table_name)
         {
             try
@@ -59,8 +61,8 @@ namespace BookStoreProject.Controllers
                 comd = "SELECT * FROM[bookexchange].[dbo].[Author]";
                 List<String> authors = FetchDataInView(comd, "Book_Author");
                 ViewBag.Authors = authors;
-                List<Book> trendyBooks = bookController.getTrendyBooks();
-                ViewBag.trendyBooks = trendyBooks;
+                //List<Book> trendyBooks = bookController.getTrendyBooks();
+                //ViewBag.trendyBooks = trendyBooks;
                 return View();
         }
         [HttpPost]

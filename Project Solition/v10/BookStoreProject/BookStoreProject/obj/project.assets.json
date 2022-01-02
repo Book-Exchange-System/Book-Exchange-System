@@ -3797,19 +3797,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ecems\\.nuget\\packages\\": {}
+    "C:\\Users\\osman\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ecems\\Desktop\\v10\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj",
+      "projectUniqueName": "C:\\Users\\osman\\Documents\\GitHub\\Book-Exchange-System\\Project Solition\\v10\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj",
       "projectName": "BookStoreProject",
-      "projectPath": "C:\\Users\\ecems\\Desktop\\v10\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj",
-      "packagesPath": "C:\\Users\\ecems\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ecems\\Desktop\\v10\\BookStoreProject\\BookStoreProject\\obj\\",
+      "projectPath": "C:\\Users\\osman\\Documents\\GitHub\\Book-Exchange-System\\Project Solition\\v10\\BookStoreProject\\BookStoreProject\\BookStoreProject.csproj",
+      "packagesPath": "C:\\Users\\osman\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\osman\\Documents\\GitHub\\Book-Exchange-System\\Project Solition\\v10\\BookStoreProject\\BookStoreProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ecems\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\osman\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3870,7 +3870,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   },
