@@ -298,6 +298,16 @@ namespace BookStoreProject.Controllers
             userController.UpdateCurrentUser();
             return Redirect(Request.Headers["Referer"].ToString());
         }
+        public void AddBook(Book book)
+        {
+            string cmd = "Insert Into [dbo].[Book](Book_Name,Book_Author,Book_Category,Book_PageCount,Book_Price,Book_Rating,Book_About,Book_Year) values('"+book.Name+"','" + book.Author + "','" + book.Category + "','" + book.PageCount + "','" + book.Price + "','" + book.Rating + "','" + book.About.Replace('\'','"') + "','" + book.Year + "');";
+            con.Open();
+            com = con.CreateCommand();
+            com.CommandType = CommandType.Text;
+            com.CommandText = cmd;
+            com.ExecuteNonQuery();
+            con.Close();
+        }
     }
 
 }

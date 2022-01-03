@@ -1,0 +1,65 @@
+﻿@model Book
+@{ 
+    ViewData["Title"] = "Add Book";
+}
+<div id="add-book">
+    <div class="card col-lg-6 m-auto">
+        <div class="card-header">
+            <div class="header-title">
+                <h4 class="card-title mb-0">
+                    Add Book
+                </h4>
+            </div>
+        </div>
+        <div class="card-body">
+            <form action="/admin/addbook" method="post">
+                <div class="row align-items-center">
+                    <div class="form-group col-sm-8">
+                        <p class="text-danger">@ViewBag.errorMessage</p>
+                        <label asp-for="Name">Book Name</label>
+                        <input asp-for="Name" type="text" class="form-control mb-0" id="Name" placeholder="Book Name">
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label asp-for="Author">Author</label>
+                        <input asp-for="Author" type="text" class="form-control mb-0" id="Author" placeholder="Book Author">
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label asp-for="Category">Category</label>
+                        <input asp-for="Category" type="text" class="form-control mb-0" id="Category" placeholder="Book Category">
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label asp-for="PageCount">Page Count</label>
+                        <input asp-for="PageCount" type="number" class="form-control mb-0" id="author" placeholder="XXX">
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label asp-for="Price">Price</label>
+                        <input asp-for="Price" type="number" class="form-control mb-0" id="Price" placeholder="XXX$">
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label asp-for="Rating">Rating</label>
+                        <input asp-for="Rating" type="number" class="form-control mb-0" max="10" min="0" id="Rating" placeholder="0-10">
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label asp-for="Year">Year</label>
+                        <input asp-for="Year" type="number" class="form-control mb-0" max="9999" min="1700" id="Year" placeholder="XXXX">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="exampleFormControlFile1">Book Image</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="exampleFormControlFile1">Book PDF</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <label asp-for="About">About</label>
+                        <textarea asp-for="About" id="About" rows="4" cols="50" class="form-control" placeholder="About"></textarea>
+                    </div>
+                    <div class="sign-info text-center col-sm-12">
+                        <button type="submit" class="btn btn-primary d-block w-100 mb-2 m-auto">Add Book</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

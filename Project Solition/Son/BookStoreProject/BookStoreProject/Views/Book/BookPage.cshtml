@@ -58,7 +58,7 @@
                                     @if (ownedBooks != null)
                                     {
                                         bool flag = false;
-                                        foreach(Book temp in ownedBooks)
+                                        foreach (Book temp in ownedBooks)
                                         {
                                             if (temp.ID == book.ID)
                                             {
@@ -68,11 +68,11 @@
                                         }
                                         if (flag)
                                         {
-                                <a href="~/readbook/@book.ID" class="btn btn-primary view-more mr-2">Read The Book</a>
-                    }
-                                
+                                            <a href="~/readbook/@book.ID" class="btn btn-primary view-more mr-2">Read The Book</a>
+                                        }
+
                                     }
-                                    
+
                                 </div>
                                 <div class="mb-3 d-flex align-items-center">
                                     <a href="~/addtowantstoreadlist/@book.ID">
@@ -140,7 +140,7 @@
                                             </div>
                                         </div>
                                     </li>
-}
+                                }
                             </ul>
                         </div>
                     </div>

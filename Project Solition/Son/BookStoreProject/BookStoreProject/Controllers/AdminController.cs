@@ -32,7 +32,24 @@ namespace BookStoreProject.Controllers
             }
             return RedirectToAction("error", "home");
         }
-        
-        
+        [HttpGet]
+        public IActionResult AddBook()
+        {
+            if (currentUser != null && currentUser.UserType != null && currentUser.UserType == "a")
+            {
+                return View();
+            }
+            return RedirectToAction("error", "home");
+        }
+        [HttpPost]
+        public IActionResult AddBook(Book book)
+        {
+            if (currentUser != null && currentUser.UserType != null && currentUser.UserType == "a")
+            {
+                bookController.AddBook(book);
+                return RedirectToAction("book_table", "admin");
+            }
+            return RedirectToAction("error", "home");
+        }
     }
 }
