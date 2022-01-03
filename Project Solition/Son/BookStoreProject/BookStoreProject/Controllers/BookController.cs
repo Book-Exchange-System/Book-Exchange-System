@@ -30,6 +30,7 @@ namespace BookStoreProject.Controllers
             ViewBag.FavoriteBooks = books;
             List<Book> trendyBooks = getTrendyBooks();
             ViewBag.trendyBooks = trendyBooks;
+            if (LoginController.currentUser != null) ViewBag.ownedBooks = FetchBookWithStr(LoginController.currentUser.BooksOwned);
             return View();
         }
         public Book getBook(String id)
@@ -69,6 +70,7 @@ namespace BookStoreProject.Controllers
         [Route("readbook/{bookID}")]
         public IActionResult BookReader(String bookID)
         {
+            if (LoginController.currentUser == null) RedirectToAction("login", "login");
             List<Book> ownedBooks = FetchBookWithStr(LoginController.currentUser.BooksOwned);
             foreach (Book book in ownedBooks)
             {
@@ -155,6 +157,7 @@ namespace BookStoreProject.Controllers
         [Route("addShoppingCart/{book_ID}")]
         public IActionResult AddShoppingCart(string book_ID)
         {
+            if (LoginController.currentUser == null) return RedirectToAction("login", "login"); 
             List<Book> bookList = FetchBookWithStr(LoginController.currentUser.BooksOwned);
             for (int i = 0; i < bookList.Count; i++)
             {

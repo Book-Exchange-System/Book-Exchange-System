@@ -139,7 +139,7 @@ $('.slick-track').slick({
     ]
 });
 $('.similar-slider').slick({
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1200,
@@ -147,13 +147,13 @@ $('.similar-slider').slick({
         {
             breakpoint: 1200,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
             }
         },
         {
             breakpoint: 900,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
             }
         }
         ,

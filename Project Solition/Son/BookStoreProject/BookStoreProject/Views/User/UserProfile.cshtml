@@ -108,11 +108,15 @@
                                 <div class="col-sm-7 mt-3 mt-sm-0">
                                     <h4 class="mb-2">@book.Name</h4>
                                     <p class="mb-2">Author: @book.Author</p>
-                                    <a href="~/book/@book.ID" class="btn btn-primary learn-more">Learn More</a>
                                     @{
                                         if (currentUser != null && currentUser.ID == user.ID)
                                         {
+                                            <a href="~/readbook/@book.ID" class="btn btn-primary learn-more">Read The Book</a>
                                             <a href="~/donereadingbook/@book.ID" class="btn btn-danger">Done Reading</a>
+                                        }
+                                        else
+                                        {
+                                            <a href="~/book/@book.ID" class="btn btn-primary learn-more">Learn More</a>
                                         }
                                     }
                                 </div>

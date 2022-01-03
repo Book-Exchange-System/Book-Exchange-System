@@ -16,6 +16,8 @@ namespace BookStoreProject.Controllers
         SqlConnection con = HomeController.con;
 
         BookController bookController = new BookController();
+
+        [Obsolete]
         public List<String> FetchDataInView(String command,String table_name)
         {
             try
@@ -41,6 +43,7 @@ namespace BookStoreProject.Controllers
         [Route("category")]
         [Route("category/{searchText?}")]
         [HttpGet]
+        [Obsolete]
         public ActionResult Category(string searchText)
         {
             String comd = "";
@@ -86,6 +89,7 @@ namespace BookStoreProject.Controllers
             return View();
         }
         [HttpPost]
+        [Obsolete]
         public ActionResult Category(Book book)
         {
             String comd = "SELECT * FROM [dbo].[Book]";

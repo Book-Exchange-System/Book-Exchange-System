@@ -3,6 +3,7 @@
     List<Book> top12books = ViewBag.top12books;
     Book featuredBook = ViewBag.FeaturedBook;
     List<Book> favoriteBooks = ViewBag.FavoriteBooks;
+    List<Book> trendyBooks = ViewBag.trendyBooks;
     string img_source = "";
 }
 <div id="index">
@@ -118,7 +119,7 @@
                                 img_source = featuredBook.Category + "/" + img_source + "-" + featuredBook.Year + ".jpg";
                             }
                             <a href="~/book/@featuredBook.ID">
-                                <img class="img-fluid rounded w-100" style="width:280px;height:450px;overflow:hidden;"  src="~/images/book-images/@img_source" alt="">
+                                <img class="img-fluid rounded" style="width:320px;height:450px;overflow:hidden;"  src="~/images/book-images/@img_source" alt="">
                             </a>
                         </div>
                         <div class="col-sm-7 mt-3 mt-sm-0">
@@ -159,7 +160,7 @@
 
                             <div class="col-sm-5 pr-0">
                                 <a href="~/book/@book.ID">
-                                    <img class="img-fluid rounded w-100"  style="width:280px;height:450px;overflow:hidden;" src="~/images/book-images/@img_source" alt="">
+                                    <img class="img-fluid rounded"  style="width:320px;height:450px;overflow:hidden;" src="~/images/book-images/@img_source" alt="">
                                 </a>
                             </div>
                             <div class="col-sm-7 mt-3 mt-sm-0">
@@ -173,7 +174,7 @@
                                 </div>
                                 <a href="~/book/@book.ID" class="btn btn-primary learn-more">Learn More</a>
                             </div>
-                        }
+            }
 
                     </div>
                 </div>

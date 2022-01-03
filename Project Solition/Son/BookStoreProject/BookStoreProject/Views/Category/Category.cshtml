@@ -75,52 +75,59 @@
                         {
                             img_source = book.Name.Replace(" ", "-").ToLower();
                             img_source = book.Category + "/" + img_source + "-" + book.Year + ".jpg";
-                       
 
-                        <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                            <div class="card-book" style="height: calc(100% - 30px);">
-                                <div class="card-book-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div id="book-img" class="col-6 p-0 position-relative image-overlap-shadow">
-                                            <a href="~/book/@book.ID">
-                                                <img class="img-fluid rounded w-100" src="~/images/book-images/@img_source
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                                <div class="card-book" style="height: calc(100% - 30px);">
+                                    <div class="card-book-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div id="book-img" class="col-6 p-0 position-relative image-overlap-shadow">
+                                                <a href="~/book/@book.ID">
+                                                    <img class="img-fluid rounded w-100" src="~/images/book-images/@img_source
                                                     " alt="">
-                                                <div class="book-img-overlay">
-                                                    <div class="icon">
-                                                        <i class="fas fa-shopping-basket"></i>
+                                                    <div class="book-img-overlay">
+                                                        <div class="icon">
+                                                            <i class="fas fa-shopping-basket"></i>
+                                                        </div>
                                                     </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="mb-2">
+                                                    <h6 class="mb-2">@book.Name</h6>
+                                                    <p class="font-size-13 line-height mb-1">@book.Author</p>
                                                 </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="mb-2">
-                                                <h6 class="mb-2">@book.Name</h6>
-                                                <p class="font-size-13 line-height mb-1">@book.Author</p>
-                                            </div>
-                                            <div class="price d-flex align-items-center">
-                                                <h6>
-                                                    <b>$@book.Price</b>
-                                                </h6>
-                                            </div>
-                                            <div class="price d-flex align-items-center">
-                                                <h6>
-                                                    @book.Category
-                                                </h6>
-                                            </div>
-                                            <div class="product-action">
-                                                <a href="~/addShoppingCart/@book.ID">
-                                                    <i class="fas fa-shopping-cart"></i>
-                                                </a>
-                                                <a href="~/addtowantstoreadlist/@book.ID" class="ml-2">
-                                                    <i class="fas fa-heart" style="color:red;"></i>
-                                                </a>
+                                                <div class="price d-flex align-items-center">
+                                                    <h6>
+                                                        <b>$@book.Price</b>
+                                                    </h6>
+                                                </div>
+                                                <div class="price d-flex align-items-center">
+                                                    <h6>
+                                                        @book.Category
+                                                    </h6>
+                                                </div>
+                                                <div class="product-action">
+                                                    <a href="~/addShoppingCart/@book.ID">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </a>
+                                                    <a href="~/addtowantstoreadlist/@book.ID" class="ml-2">
+                                                        <i class="fas fa-heart" style="color:red;"></i>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         }
+                        @if (books.Count == 0)
+                        {
+                            <div class="text-danger">
+                                <strong>Not found the Books.</strong>
+                            </div>
+                        }
+
                     </div>
                 </div>
             </div>

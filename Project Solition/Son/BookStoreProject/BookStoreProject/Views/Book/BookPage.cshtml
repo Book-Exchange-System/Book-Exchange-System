@@ -3,6 +3,7 @@
     ViewData["Title"] = "Book Page";
     List<Book> favoriteBooks = ViewBag.FavoriteBooks;
     List<Book> trendyBooks = ViewBag.trendyBooks;
+    List<Book> ownedBooks = ViewBag.ownedBooks;
     string img_source = "";
 }
 
@@ -54,7 +55,24 @@
                                 </div>
                                 <div class="mb-4 d-flex align-items-center">
                                     <a href="~/addShoppingCart/@book.ID" class="btn btn-primary view-more mr-2">Add To Cart</a>
-                                    <a href="~/readbook/@book.ID" class="btn btn-primary view-more mr-2">Read Sample</a>
+                                    @if (ownedBooks != null)
+                                    {
+                                        bool flag = false;
+                                        foreach(Book temp in ownedBooks)
+                                        {
+                                            if (temp.ID == book.ID)
+                                            {
+                                                flag = true;
+                                                break;
+                                            }
+                                        }
+                                        if (flag)
+                                        {
+                                <a href="~/readbook/@book.ID" class="btn btn-primary view-more mr-2">Read The Book</a>
+                    }
+                                
+                                    }
+                                    
                                 </div>
                                 <div class="mb-3 d-flex align-items-center">
                                     <a href="~/addtowantstoreadlist/@book.ID">
@@ -131,7 +149,7 @@
                                 {
                                     img_source = book.Name.Replace(" ", "-").ToLower();
                                     img_source = book.Category + "/" + img_source + "-" + book.Year + ".jpg";
-                                    <li class="col-md-3 slick-slide">
+                                    <li class="col-md-4 slick-slide">
                                         <div class="d-flex align-items-center">
                                             <div id="book-img" class="col-6 p-0 position-relative image-overlap-shadow">
                                                 <a href="~/book/@book.ID">
