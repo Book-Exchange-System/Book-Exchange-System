@@ -16,7 +16,7 @@ namespace BookStoreProject.Controllers
     {
 
         BookController bookController = new BookController();
-        public static SqlConnection con = new SqlConnection(@"Data Source=desktop-mruiip9;Initial Catalog=bookexchange;Integrated Security=True");
+        public static SqlConnection con = new SqlConnection(@"Data Source=OsmanPC;Initial Catalog=bookexchange;Integrated Security=True");
         public IActionResult Index()
         {
             String comd = "SELECT TOP 12 * FROM[bookexchange].[dbo].[Book]";
