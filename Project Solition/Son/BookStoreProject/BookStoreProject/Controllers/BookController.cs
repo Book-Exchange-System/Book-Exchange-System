@@ -295,6 +295,7 @@ namespace BookStoreProject.Controllers
                 if (user.NowReading == book_ID) user.NowReading = "";
                 userController.UpdateUser(user);
             }
+            userController.UpdateCurrentUser();
             return Redirect(Request.Headers["Referer"].ToString());
         }
     }
