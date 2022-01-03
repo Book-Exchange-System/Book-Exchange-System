@@ -197,6 +197,106 @@ namespace BookStoreProject.Controllers
             string cmd = "SELECT b.* FROM    Book b INNER JOIN Purchase p ON b.Book_ID=p.BookID GROUP BY b.Book_ID, b.Book_About,b.Book_Author,b.Book_Category,b.Book_Name,b.Book_PageCount,b.Book_year,b.Book_Price,b.Book_Rating Order by COUNT(b.Book_ID) desc";
             return FetchBook(cmd);
         }
+        [Route("deletebook/{book_ID}")]
+        public IActionResult DeleteBook(string book_ID)
+        {
+            string cmd = "Delete from [dbo].[Book] where Book_ID='" + book_ID + "';";
+            con.Open();
+            com = con.CreateCommand();
+            com.CommandType = CommandType.Text;
+            com.CommandText = cmd;
+            com.ExecuteNonQuery();
+            con.Close();
+            UserController userController = new UserController();
+            List<User> users = userController.FetchUser("select * from [dbo].[User]");
+            foreach(User user in users)
+            {
+                String newBooksOwned="";
+                String temp = user.BooksOwned;
+                if (temp.Contains(";"))
+                {
+                    String[] tempBooks = temp.Split(";");
+                    if (tempBooks[0] != book_ID)
+                    {
+                        newBooksOwned = tempBooks[0];
+                        for (int i = 1; i < tempBooks.Length; i++)
+                        {
+                            if (tempBooks[i] != book_ID) newBooksOwned += (";" + tempBooks[i]);
+                        }
+                    }
+                    else
+                    {
+                        newBooksOwned = tempBooks[1];
+                        for (int i = 2; i < tempBooks.Length; i++)
+                        {
+                            if (tempBooks[i] != book_ID) newBooksOwned += (";" + tempBooks[i]);
+                        }
+                    }
+                }
+                else if (temp.Length > 0)
+                {
+                    if (temp != book_ID) newBooksOwned = book_ID;
+                }
+                user.BooksOwned = newBooksOwned;
+                String newReadAlreadyList = "";
+                temp = user.ReadAlreadyList;
+                if (temp.Contains(";"))
+                {
+                    String[] tempBooks = temp.Split(";");
+                    if (tempBooks[0] != book_ID)
+                    {
+                        newReadAlreadyList = tempBooks[0];
+                        for (int i = 1; i < tempBooks.Length; i++)
+                        {
+                            if (tempBooks[i] != book_ID) newReadAlreadyList += (";" + tempBooks[i]);
+                        }
+                    }
+                    else
+                    {
+                        newReadAlreadyList = tempBooks[1];
+                        for (int i = 2; i < tempBooks.Length; i++)
+                        {
+                            if (tempBooks[i] != book_ID) newReadAlreadyList += (";" + tempBooks[i]);
+                        }
+                    }
+                }
+                else if (temp.Length > 0)
+                {
+                    if (temp != book_ID) newReadAlreadyList = book_ID;
+                }
+                user.ReadAlreadyList = newReadAlreadyList;
+                String newWantsToReadList = "";
+                temp = user.WantsToReadList;
+                if (temp.Contains(";"))
+                {
+                    String[] tempBooks = temp.Split(";");
+                    if (tempBooks[0] != book_ID)
+                    {
+                        newWantsToReadList = tempBooks[0];
+                        for (int i = 1; i < tempBooks.Length; i++)
+                        {
+                            if(tempBooks[i]!= book_ID) newWantsToReadList += (";" + tempBooks[i]);
+                        }
+                    }
+                    else
+                    {
+                        newWantsToReadList = tempBooks[1];
+                        for (int i = 2; i < tempBooks.Length; i++)
+                        {
+                            if (tempBooks[i] != book_ID) newWantsToReadList += (";" + tempBooks[i]);
+                        }
+                    }
+                }
+                else if (temp.Length > 0)
+                {
+                    if (temp != book_ID) newWantsToReadList = book_ID;
+                }
+                user.WantsToReadList = newWantsToReadList;
+                if (user.NowReading == book_ID) user.NowReading = "";
+                userController.UpdateUser(user);
+            }
+            return Redirect(Request.Headers["Referer"].ToString());
+        }
     }
 
 }

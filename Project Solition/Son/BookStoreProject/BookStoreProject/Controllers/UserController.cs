@@ -110,6 +110,16 @@ namespace BookStoreProject.Controllers
             con.Close();
             LoginController.currentUser = FetchUser("select * from [dbo].[User] where ID = '"+ LoginController.currentUser.ID.ToString() + "';")[0];
         }
+        public void UpdateUser(User user)
+        {
+            String commandText = "Update [dbo].[User] Set Username = '" + user.Username + "', Name = '" + user.Name + "', Surname = '" + user.Surname + "', Password = '" + user.Password + "', Birthday = '" + user.Birthday.ToString("yyyy-MM-dd") + "', PhoneNumber = '" + user.PhoneNumber + "', Email = '" + user.Email + "', About = '" + user.About + "', Facebook = '" + user.Facebook + "', Twitter = '" + user.Twitter + "', Youtube = '" + user.Youtube + "', Pinterest = '" + user.Pinterest + "', BooksOwned = '" + user.BooksOwned + "', WantsToReadList = '" + user.WantsToReadList + "', ReadAlreadyList = '" + user.ReadAlreadyList + "', NowReading = '" + user.NowReading + "' where ID = '" + user.ID + "';";
+            con.Open();
+            com = con.CreateCommand();
+            com.CommandType = CommandType.Text;
+            com.CommandText = commandText;
+            com.ExecuteNonQuery();
+            con.Close();
+        }
         [HttpGet]
         [Route("accountsettings")]
         public IActionResult AccountSettings()
