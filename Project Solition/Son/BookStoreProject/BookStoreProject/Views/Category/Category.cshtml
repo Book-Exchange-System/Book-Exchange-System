@@ -6,6 +6,7 @@
     List<String> authors = ViewBag.Authors;
     List<String> years = ViewBag.Years;
     List<Book> favoriteBooks = ViewBag.FavoriteBooks;
+    List<Book> trendyBooks = ViewBag.trendyBooks;
     String img_source = "";
 }
 
@@ -14,7 +15,7 @@
         <div class="col-lg-12">
             <div class="card-transparent mb-0">
                 <div class="d-block text-center">
-                    <h2 class="mb-3">Search by Book Name</h2>
+                    <h2 class="mb-3">Search Book</h2>
                     <form action="/category/category" method="post">
                         <div class="w-100 search-filter">
                             <ul class="list-inline p-0 m-0 row justify-content-center search-menu-options">
@@ -147,7 +148,7 @@
                     <div class="list-inline p-0 mb-0 row slick-initialized slick-slider">
                         <div class="slick-list draggable">
                            <ul class="similar-slider p-0">
-                                @foreach(Book book in favoriteBooks)
+                                @foreach(Book book in trendyBooks)
                                 {
                                     img_source = book.Name.Replace(" ", "-").ToLower();
                                     img_source = book.Category + "/" + img_source + "-" + book.Year + ".jpg";

@@ -582,3 +582,4 @@ C:\Users\ecems\Documents\GitHub\Book-Exchange-System\Project Solition\Son\BookSt
 C:\Users\ecems\Documents\GitHub\Book-Exchange-System\Project Solition\Son\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.pdb
 C:\Users\ecems\Documents\GitHub\Book-Exchange-System\Project Solition\Son\BookStoreProject\BookStoreProject\obj\Debug\net5.0\BookStoreProject.genruntimeconfig.cache
 C:\Users\osman\Documents\GitHub\Book-Exchange-System\Project Solition\Son\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Admin\AddBook.cshtml.g.cs
+C:\Users\ecems\Documents\GitHub\Book-Exchange-System\Project Solition\Son\BookStoreProject\BookStoreProject\obj\Debug\net5.0\Razor\Views\Admin\AddBook.cshtml.g.cs

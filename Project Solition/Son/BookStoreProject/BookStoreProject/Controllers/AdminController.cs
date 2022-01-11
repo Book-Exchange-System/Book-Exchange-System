@@ -47,7 +47,7 @@ namespace BookStoreProject.Controllers
             if (currentUser != null && currentUser.UserType != null && currentUser.UserType == "a")
             {
                 bookController.AddBook(book);
-                return RedirectToAction("book_table", "admin");
+                return RedirectToAction("books_table", "admin");
             }
             return RedirectToAction("error", "home");
         }
